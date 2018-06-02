@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Features from "./Features.jsx";
+import Icons from "./Icons.jsx";
 
 class App extends React.Component {
 	constructor(props) {
@@ -10,21 +12,11 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
-				<div class="user">
-					<div id="hostelLogo">HOSTELWORLD </div>
-					<i class="fas fa-user" />
-				</div>
-				<div class="features">
-					<i class="fas fa-wifi fa-lg" />
-				</div>
-				<div class="circle" />
-				<div class="features2">
-					<i class="fas fa-coffee fa-lg" />
-				</div>
-				<div class="circle2" />
+				<Icons />
+				<Features />
 				<div id="hostelName"> ISLAND HOSTELS </div>
 				<div id="location">
-					<i class="fas fa-map-marker-alt" />
+					<i className="fas fa-map-marker-alt" />
 					48 Station Road, Mountain Lavinia, Colombo, Sri Lanka
 				</div>
 			</div>
