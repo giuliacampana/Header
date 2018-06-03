@@ -33,7 +33,7 @@ class Search extends React.Component {
 					   		</div>
 					</div>
 				<div id="searchDiv"> GUESTS 
-						<select class="guests" name="number_of_guests" type="text">
+						<select  type="text">
 						             <option
 						                value="1"
 						                                >1 Guest</option>
