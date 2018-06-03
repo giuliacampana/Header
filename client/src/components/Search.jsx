@@ -11,23 +11,28 @@ class Search extends React.Component {
 	render() {
 		return (
 			<div id="search">
-				<div id="searchDiv"> LOCATION</div>
-				<br />
+				<div id="searchDiv"> LOCATION </div>
+					<div className="input-group add-on col-md-2 date datepicker" data-date-format="yyyy-mm-dd">
+					    <input name="name" value="" type="text" className="form-control date-picker" data-date-format="yyyy-mm-dd"/>
+					    	<div className="input-group-btn">
+					   			<button className="btn btn-default"><i className="fa fa-compass"></i></button>
+					   		</div>
+					</div>
 				<div id="searchDiv"> CHECK IN </div>
-				<div className="input-group add-on col-md-2 date datepicker" data-date-format="yyyy-mm-dd">
-				    <input name="name" value="" type="text" className="form-control date-picker" data-date-format="yyyy-mm-dd"/>
-				    	<div className="input-group-btn">
-				   			<button className="btn btn-default"><i className="fa fa-calendar"></i></button>
-				   		</div>
-				</div>
+					<div className="input-group add-on col-md-2 date datepicker" data-date-format="yyyy-mm-dd">
+					    <input name="name" value="" type="text" className="form-control date-picker" data-date-format="yyyy-mm-dd"/>
+					    	<div className="input-group-btn">
+					   			<button className="btn btn-default"><i className="fa fa-calendar"></i></button>
+					   		</div>
+					</div>
 				<div id="searchDiv"> CHECK OUT </div>
-				<div className="input-group add-on col-md-2 date datepicker" data-date-format="yyyy-mm-dd">
-				    <input name="name" value="" type="text" className="form-control date-picker" data-date-format="yyyy-mm-dd"/>
-				    	<div className="input-group-btn">
-				   			<button className="btn btn-default"><i className="fa fa-calendar"></i></button>
-				   		</div>
-				</div>
-				<div className="searchDiv"> GUESTS <br />
+					<div className="input-group add-on col-md-2 date datepicker" data-date-format="yyyy-mm-dd">
+					    <input name="name" value="" type="text" className="form-control date-picker" data-date-format="yyyy-mm-dd"/>
+					    	<div className="input-group-btn">
+					   			<button className="btn btn-default"><i className="fa fa-calendar"></i></button>
+					   		</div>
+					</div>
+				<div id="searchDiv"> GUESTS 
 						<select class="guests" name="number_of_guests" type="text">
 						             <option
 						                value="1"
