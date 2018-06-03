@@ -50,6 +50,9 @@ class Icons extends React.Component {
 					<a> 
 						<i class="fas fa-sign-in-alt fa-sm"></i>
 						Sign In/ Create Account 
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+						  Launch demo modal
+						</button>
 					</a>
 					<br />
 					<p> Language 
