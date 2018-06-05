@@ -15,8 +15,8 @@ const hostelSchema = mongoose.Schema({
 
 const Hostel = mongoose.model("Hostel", hostelSchema);
 
-for (var j = 0; j < mockHostelData.length; j++) {
-	const currentHostel = mockHostelData[j];
+for (let i = 0; i < mockHostelData.length; i += 1) {
+	const currentHostel = mockHostelData[i];
 	const newHostel = new Hostel({
 		id: currentHostel.id,
 		location_id: currentHostel.location_id,
@@ -38,7 +38,7 @@ const locationSchema = mongoose.Schema({
 
 const Location = mongoose.model("Location", locationSchema);
 
-for (var i = 0; i < mockLocationsData.length; i++) {
+for (let i = 0; i < mockLocationsData.length; i += 1) {
 	const current = mockLocationsData[i];
 	const newLocation = new Location({
 		id: current.id,
