@@ -1,17 +1,31 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Features from "./Features.jsx";
+import axios from "axios";
 import Icons from "./Icons.jsx";
 
 class App extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {};
+		this.state = {
+			photos: []
+		};
+		this.getPhotos= this.getPhotos.bind(this);
+	}
+
+	getPhotos() {
+		axios.get('/locations/hostels/hosetelId/pictures')
+		.then((response) => {
+			console.log(response.data[0]);
+		})
+		.catch((error) => {
+			console.log(error);
+		});
 	}
 
 	render() {
 		return (
-			<div>
+			<div onClick={()=> {this.getPhotos()}}>
 				<Icons />
 				<Features />
 				<div id="hostelName"> ISLAND HOSTELS </div>
