@@ -47,12 +47,9 @@ class Icons extends React.Component {
 						Home 
 					</a>
 					<br />
-					<a> 
+					<a data-toggle="modal" data-target="#exampleModal"> 
 						<i class="fas fa-sign-in-alt fa-sm"></i>
 						Sign In/ Create Account 
-						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-						  Launch demo modal
-						</button>
 					</a>
 					<br />
 					<p> Language 
@@ -232,7 +229,10 @@ class Icons extends React.Component {
 				<div id="searchContainer">
 					<div id="hostelLogo">HOSTELWORLD </div>
 					<div id="searchContainer">
-						<i id="user" className="fas fa-user fa-lg" />
+						<i data-toggle="modal" 
+							data-target="#exampleModal"
+							id="user" 
+							className="fas fa-user fa-lg" />
 						<i
 							onClick={() => {
 								this.openSearch();

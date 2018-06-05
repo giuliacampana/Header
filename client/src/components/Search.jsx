@@ -277,6 +277,7 @@ class Search extends React.Component {
 						    
 					</select>
 				</div>
+				<button type="button" class="btn btn-search">Search</button>
 			</div>
 		);
 	}

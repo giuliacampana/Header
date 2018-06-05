@@ -19,21 +19,32 @@ class App extends React.Component {
 					<i className="fas fa-map-marker-alt" />
 					48 Station Road, Mountain Lavinia, Colombo, Sri Lanka
 				</div>
-				<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-				  <div class="modal-dialog modal-dialog-centered" role="document">
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <h5 >Modal title</h5>
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div className="modal-dialog" role="document">
+				    <div className="modal-content">
+				      <div className="modal-header">
+				        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
 				          <span aria-hidden="true">&times;</span>
 				        </button>
+				        <div className="modal-title" id="exampleModalLabel">Sign in or <a
+				        href="https://tsecure.hostelworld.com/en/signup">Sign up</a>
+				        </div>
 				      </div>
-				      <div class="modal-body">
-				        ...
+				      <div className="modal-body">
+				        <form role="form">
+		                    <div class="form-group">
+		                      <label for="usrname"> EMAIL ADDRESS/ USERNAME</label>
+		                      <input type="text" class="form-control" id="usrname" placeholder="Username/email address" />
+		                    </div>
+		                    <div class="form-group">
+		                      <label for="psw">PASSWORD</label>
+		                      <input type="text" class="form-control" id="psw" placeholder="Password"/>
+		                    </div>
+				        </form>
 				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				        <button type="button" class="btn btn-primary">Save changes</button>
+				      <div className="modal-footer">
+				      	<a> Forgot password? </a>
+				      	<button type="button" className="btn btn-search">Login</button>
 				      </div>
 				    </div>
 				  </div>
