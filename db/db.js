@@ -31,6 +31,7 @@ const Hostel = mongoose.model("Hostel", hostelSchema);
 // 		photos: currentHostel.photos
 // 	});
 
+
 // 	newHostel.save((err, product) => {
 // 		if (err) throw err;
 // 	});
@@ -60,6 +61,7 @@ const Location = mongoose.model("Location", locationSchema);
 // 		if (err) throw err;
 // 	});
 // }
+
 
 module.exports.Hostel = Hostel;
 module.exports.Location = Location;
