@@ -21,12 +21,13 @@ class App extends React.Component {
 		};
 		this.getHostelInfo = this.getHostelInfo.bind(this);
 		this.getLocationInfo = this.getLocationInfo.bind(this);
-		// this.ComponentDidMount = this.ComponentDidMount.bind(this);
+		this.toggleCarousel = this.toggleCarousel.bind(this);
 	}
 
-	// ComponentDidMount() {
-	// 	this.getPhotos();
-	// }
+	componentDidMount() {
+		this.getHostelInfo();
+		this.getLocationInfo();
+	}
 
 	getHostelInfo() {
 		axios
@@ -48,8 +49,7 @@ class App extends React.Component {
 				this.setState({
 					name: response.data[3].hostel_name,
 					location: response.data[3].street_name,
-					photos: response.data[3].photos,
-					carousel: true
+					photos: response.data[3].photos
 				});
 			})
 			.catch(error => {
@@ -67,18 +67,26 @@ class App extends React.Component {
 		});
 	}
 
+	toggleCarousel() {
+		console.log("enters func");
+		this.setState(prevState => ({
+			carousel: !prevState.carousel
+		}));
+	}
+
 	render() {
 		return (
-			<div
-				onClick={() => {
-					this.getHostelInfo();
-					this.getLocationInfo();
-				}}
-			>
+			<div>
 				<Icons
 					languages={this.props.languages}
 					currency={this.props.currency}
 					guests={this.props.guests}
+				/>
+				<div
+					onClick={() => {
+						this.toggleCarousel();
+					}}
+					id="showCarousel"
 				/>
 				{this.state.wifi ? <Wifi /> : null}
 				{this.state.coffee ? <Coffee /> : null}
@@ -90,7 +98,10 @@ class App extends React.Component {
 				</div>
 				<Modal />
 				{this.state.carousel ? (
-					<Carousel photos={this.state.photos} />
+					<Carousel
+						photos={this.state.photos}
+						closeCarousel={this.toggleCarousel}
+					/>
 				) : null}
 			</div>
 		);
