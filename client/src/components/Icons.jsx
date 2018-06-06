@@ -115,7 +115,11 @@ class Icons extends React.Component {
 					<br />
 				</div>
 				<div id="searchContainer">
-					<div id="hostelLogo">HOSTELWORLD </div>
+					<div id="hostelLogo">
+						RU<a>
+							inn<i class="fas fa-home fa-sm" />
+						</a>{" "}
+					</div>
 					<div id="searchContainer">
 						<i
 							data-toggle="modal"

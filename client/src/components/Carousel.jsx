@@ -16,25 +16,9 @@ class Carousel extends React.Component {
 			>
 				<div className="carousel-inner">
 					<div className="carousel-item active">
-						<img
-							className="d-block w-100"
-							src="http://dummyimage.com/202x136.png/5fa2dd/ffffff"
-							alt="First slide"
-						/>
-					</div>
-					<div className="carousel-item">
-						<img
-							className="d-block w-100"
-							src="http://dummyimage.com/202x136.png/5fa2dd/ffffff"
-							alt="Second slide"
-						/>
-					</div>
-					<div className="carousel-item">
-						<img
-							className="d-block w-100"
-							src="http://dummyimage.com/202x136.png/5fa2dd/ffffff"
-							alt="Third slide"
-						/>
+						{this.props.photos.map((photo, i) => (
+							<img className="d-block w-100" src={photo.url} />
+						))}
 					</div>
 				</div>
 				<a
