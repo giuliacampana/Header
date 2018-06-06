@@ -15,18 +15,17 @@ class App extends React.Component {
 	}
 
 	getPhotos() {
-		axios
-			.get("/locations/hostels/hosetelId/pictures")
-			.then(response => {
-				console.log(response.data[0]);
-			})
-			.catch(error => {
-				console.log(error);
-			});
-
-		this.setState({
-			carousel: true
-		});
+		// axios
+		// 	.get("/locations/hostels/hosetelId/pictures")
+		// 	.then(response => {
+		// 		console.log(response.data[0]);
+		// 	})
+		// 	.catch(error => {
+		// 		console.log(error);
+		// 	});
+		this.setState(prevState => ({
+			carousel: !prevState.carousel
+		}));
 	}
 
 	render() {
