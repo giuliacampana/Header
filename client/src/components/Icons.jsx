@@ -14,7 +14,6 @@ class Icons extends React.Component {
 		this.openSearch = this.openSearch.bind(this);
 	}
 
-	//onClick function for the menu bars
 	closeNav() {
 		document.getElementById("sideNav").style.width = "0";
 	}
@@ -43,12 +42,12 @@ class Icons extends React.Component {
 						&times;
 					</a>
 					<a href="https://www.hostelworld.com/">
-						<i class="fas fa-home fa-sm" />
+						<i className="fas fa-home fa-sm" />
 						Home
 					</a>
 					<br />
 					<a data-toggle="modal" data-target="#exampleModal">
-						<i class="fas fa-sign-in-alt fa-sm" />
+						<i className="fas fa-sign-in-alt fa-sm" />
 						Sign In/ Create Account
 					</a>
 					<br />
