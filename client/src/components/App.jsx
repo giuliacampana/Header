@@ -1,17 +1,40 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import axios from "axios";
 import Features from "./Features.jsx";
 import Icons from "./Icons.jsx";
+import Carousel from "./Carousel.jsx";
 
 class App extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {};
+		this.state = {
+			carousel: false
+		};
+		this.getPhotos = this.getPhotos.bind(this);
+	}
+
+	getPhotos() {
+		// axios
+		// 	.get("/locations/hostels/hosetelId/pictures")
+		// 	.then(response => {
+		// 		console.log(response.data[0]);
+		// 	})
+		// 	.catch(error => {
+		// 		console.log(error);
+		// 	});
+		this.setState(prevState => ({
+			carousel: !prevState.carousel
+		}));
 	}
 
 	render() {
 		return (
-			<div>
+			<div
+				onClick={() => {
+					this.getPhotos();
+				}}
+			>
 				<Icons
 					languages={this.props.languages}
 					currency={this.props.currency}
@@ -54,23 +77,24 @@ class App extends React.Component {
 							</div>
 							<div className="modal-body">
 								<form role="form">
-									<div class="form-group">
+
+									<div className="form-group">
 										<label for="usrname">
 											{" "}
 											EMAIL ADDRESS/ USERNAME
 										</label>
 										<input
 											type="text"
-											class="form-control"
+											className="form-control"
 											id="usrname"
 											placeholder="Username/email address"
 										/>
 									</div>
-									<div class="form-group">
+									<div className="form-group">
 										<label for="psw">PASSWORD</label>
 										<input
 											type="text"
-											class="form-control"
+											className="form-control"
 											id="psw"
 											placeholder="Password"
 										/>
@@ -89,6 +113,7 @@ class App extends React.Component {
 						</div>
 					</div>
 				</div>
+				{this.state.carousel ? <Carousel /> : null}
 			</div>
 		);
 	}

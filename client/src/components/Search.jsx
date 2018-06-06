@@ -66,10 +66,11 @@ class Search extends React.Component {
 				</div>
 				<div id="searchDiv">
 					{" "}
-					GUESTS
+
+					GUESTS<br />
 					<select>
 						{this.props.guests.map((guest, i) => {
-							return <option key={i}> {guest} </option>;
+							return <option key={i}>{guest}</option>;
 						})}
 					</select>
 				</div>

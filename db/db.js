@@ -1,6 +1,8 @@
 const mockLocationsData = require("./mockLocationsData.json");
 const mockHostelData = require("./mockHostelData.json");
+
 const mongoose = require("mongoose");
+
 mongoose.connect("mongodb://localhost/header");
 
 const db = mongoose.connection;
