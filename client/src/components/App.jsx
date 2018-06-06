@@ -81,6 +81,7 @@ class App extends React.Component {
 					languages={this.props.languages}
 					currency={this.props.currency}
 					guests={this.props.guests}
+					toggleCarousel={this.toggleCarousel}
 				/>
 				<div
 					onClick={() => {

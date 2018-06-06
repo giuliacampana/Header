@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Search from "./Search.jsx";
+import NavBar from "./NavBar.jsx";
 
 class Icons extends React.Component {
 	constructor(props) {
@@ -31,89 +32,11 @@ class Icons extends React.Component {
 	render() {
 		return (
 			<div>
-				<div id="sideNav">
-					<a
-						id="closeBtn"
-						onClick={() => {
-							this.closeNav();
-						}}
-					>
-						{" "}
-						&times;
-					</a>
-					<a href="https://www.hostelworld.com/">
-						<i className="fas fa-home fa-sm" />
-						Home
-					</a>
-					<br />
-					<a data-toggle="modal" data-target="#exampleModal">
-						<i className="fas fa-sign-in-alt fa-sm" />
-						Sign In/ Create Account
-					</a>
-					<br />
-					<p>
-						{" "}
-						Language
-						<select>
-							{this.props.languages.map((language, i) => {
-								return <option key={i}>{language} </option>;
-							})}
-						</select>
-					</p>
-					<br />
-					<p>
-						{" "}
-						Currency
-						<select>
-							{this.props.currency.map((currency, i) => {
-								return <option key={i}>{currency} </option>;
-							})}
-						</select>
-					</p>
-					<br />
-					<p> Accomodation </p>
-					<br />
-					<a href="https://www.hostelworld.com/hostels">Hostels</a>
-					<br />
-					<a href="https://www.hostelworld.com/hotels">Hotels</a>
-					<br />
-					<a href="https://www.hostelworld.com/bed-and-breakfasts">
-						Bed and Breakfasts
-					</a>
-					<br />
-					<p> Explore HOSTELWORLD </p>
-					<br />
-					<a href="https://www.hostelworld.com/blog/">Blog</a>
-					<br />
-					<a href="https://www.hostelworld.com/groups">
-						Group Bookings
-					</a>
-					<br />
-					<a href="https://www.hostelworld.com/guarantee">
-						Booking Guarantee
-					</a>
-					<br />
-					<a href="https://www.hostelworld.com/hoscars">
-						Hostel Awards
-					</a>
-					<br />
-					<p> Help </p>
-					<br />
-					<a href="https://hwhelp.hostelworldgroup.com/hc/en-us">
-						Help
-					</a>
-					<br />
-					<p> Work with us </p>
-					<br />
-					<a href="https://signup.hostelworld.com/en/property/intro">
-						Hostel Sign Up
-					</a>
-					<br />
-					<a href="http://partners.hostelworld.com/">
-						Affiliate Program
-					</a>
-					<br />
-				</div>
+				<NavBar
+					languages={this.props.languages}
+					currency={this.props.currency}
+					closeNav={this.closeNav}
+				/>
 				<div id="searchContainer">
 					<div id="hostelLogo">
 						RU<a>
@@ -136,6 +59,9 @@ class Icons extends React.Component {
 						/>
 						<i
 							onClick={() => {
+								if (this.state.carousel) {
+									this.props.toggleCarousel();
+								}
 								this.openNav();
 							}}
 							id="user"
