@@ -86,7 +86,13 @@ class App extends React.Component {
 					onClick={() => {
 						this.toggleCarousel();
 					}}
-					id="showCarousel"
+					id="showCarousel1"
+				/>
+				<div
+					onClick={() => {
+						this.toggleCarousel();
+					}}
+					id="showCarousel2"
 				/>
 				{this.state.wifi ? <Wifi /> : null}
 				{this.state.coffee ? <Coffee /> : null}

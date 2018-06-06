@@ -14,14 +14,6 @@ class Carousel extends React.Component {
 				className="carousel slide"
 				data-ride="carousel"
 			>
-				<a
-					onClick={() => {
-						this.props.toggleCarousel();
-					}}
-				>
-					{" "}
-					Close photos X{" "}
-				</a>
 				<div className="carousel-inner">
 					{this.props.photos.map((photo, i) => {
 						if (photo === this.props.photos[0]) {
