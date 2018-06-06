@@ -15,11 +15,27 @@ class Carousel extends React.Component {
 				data-ride="carousel"
 			>
 				<div className="carousel-inner">
-					<div className="carousel-item active">
-						{this.props.photos.map((photo, i) => (
-							<img className="d-block w-100" src={photo.url} />
-						))}
-					</div>
+					{this.props.photos.map((photo, i) => {
+						if (photo === this.props.photos[0]) {
+							return (
+								<div className="carousel-item active">
+									<img
+										className="d-block w-100"
+										src={photo.url}
+									/>
+								</div>
+							);
+						} else {
+							return (
+								<div className="carousel-item">
+									<img
+										className="d-block w-100"
+										src={photo.url}
+									/>
+								</div>
+							);
+						}
+					})}
 				</div>
 				<a
 					className="carousel-control-prev"

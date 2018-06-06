@@ -48,8 +48,8 @@ class App extends React.Component {
 				this.setState({
 					name: response.data[3].hostel_name,
 					location: response.data[3].street_name,
-					photos: response.data[3].photos
-					//carousel: true
+					photos: response.data[3].photos,
+					carousel: true
 				});
 			})
 			.catch(error => {
