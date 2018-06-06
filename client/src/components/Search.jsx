@@ -66,6 +66,7 @@ class Search extends React.Component {
 				</div>
 				<div id="searchDiv">
 					{" "}
+
 					GUESTS<br />
 					<select>
 						{this.props.guests.map((guest, i) => {

@@ -42,11 +42,13 @@ class Icons extends React.Component {
 						&times;
 					</a>
 					<a href="https://www.hostelworld.com/">
+
 						<i className="fas fa-home fa-sm" />
 						Home
 					</a>
 					<br />
 					<a data-toggle="modal" data-target="#exampleModal">
+
 						<i className="fas fa-sign-in-alt fa-sm" />
 						Sign In/ Create Account
 					</a>
@@ -66,6 +68,7 @@ class Icons extends React.Component {
 						Currency
 						<select>
 							{this.props.currency.map((currency, i) => {
+
 								return <option key={i}>{currency} </option>;
 							})}
 						</select>
