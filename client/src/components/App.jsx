@@ -15,9 +15,12 @@ class App extends React.Component {
 			wifi: false,
 			coffee: false,
 			name: "",
-			location: ""
+			location: "",
+			city: "",
+			country: ""
 		};
 		this.getHostelInfo = this.getHostelInfo.bind(this);
+		this.getLocationInfo = this.getLocationInfo.bind(this);
 		// this.ComponentDidMount = this.ComponentDidMount.bind(this);
 	}
 
@@ -43,9 +46,9 @@ class App extends React.Component {
 					});
 				}
 				this.setState({
-					name: response.data[0].hostel_name,
-					location: response.data[0].street_name,
-					photos: response.data[0].photos
+					name: response.data[3].hostel_name,
+					location: response.data[3].street_name,
+					photos: response.data[3].photos
 					//carousel: true
 				});
 			})
@@ -54,11 +57,22 @@ class App extends React.Component {
 			});
 	}
 
+	getLocationInfo() {
+		axios.get("/locations/hostels").then(response => {
+			console.log(response.data[0]);
+			this.setState({
+				city: response.data[0].city,
+				country: response.data[0].country
+			});
+		});
+	}
+
 	render() {
 		return (
 			<div
 				onClick={() => {
 					this.getHostelInfo();
+					this.getLocationInfo();
 				}}
 			>
 				<Icons
@@ -71,7 +85,8 @@ class App extends React.Component {
 				<div id="hostelName"> {this.state.name} </div>
 				<div id="location">
 					<i className="fas fa-map-marker-alt" />
-					{this.state.location}, Mountain Lavinia, Colombo, Sri Lanka
+					{this.state.location}, {this.state.city},{" "}
+					{this.state.country}
 				</div>
 				<Modal />
 				{this.state.carousel ? (

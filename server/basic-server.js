@@ -15,7 +15,17 @@ app.get("/locations/hostels/hosetelId/pictures", (req, res) => {
 			res.send(data);
 		})
 		.catch(error => {
-			console.log("error in GET PHOTOS IN SERVER", error);
+			console.log("error in GET IN SERVER", error);
+		});
+});
+
+app.get("/locations/hostels", (req, res) => {
+	db.Location.find()
+		.then(data => {
+			res.send(data);
+		})
+		.catch(error => {
+			console.log("error in GET IN SERVER", error);
 		});
 });
 
