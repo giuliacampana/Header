@@ -39,7 +39,7 @@ class Icons extends React.Component {
 				/>
 				<div id="searchContainer">
 					<div id="hostelLogo">
-						RU<a>
+						RU<a href="https://www.hostelworld.com/">
 							inn<i class="fas fa-home fa-sm" />
 						</a>{" "}
 					</div>

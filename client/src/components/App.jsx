@@ -72,6 +72,12 @@ class App extends React.Component {
 			carousel: !prevState.carousel
 		}));
 	}
+	// <div
+	// 	onClick={() => {
+	// 		this.toggleCarousel();
+	// 	}}
+	// 	id="showCarousel2"
+	// />
 
 	render() {
 		return (
@@ -88,14 +94,12 @@ class App extends React.Component {
 					}}
 					id="showCarousel1"
 				/>
-				<div
-					onClick={() => {
-						this.toggleCarousel();
-					}}
-					id="showCarousel2"
-				/>
 				{this.state.wifi ? <Wifi /> : null}
 				{this.state.coffee ? <Coffee /> : null}
+				<div id="breadcrumbs">
+					{" "}
+					Home / {this.state.country} / {this.state.city}
+				</div>
 				<div id="hostelName"> {this.state.name} </div>
 				<div id="location">
 					<i className="fas fa-map-marker-alt" />

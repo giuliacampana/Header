@@ -4,7 +4,11 @@ import ReactDOM from "react-dom";
 class Search extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {};
+		this.state = {
+			location: "",
+			checkIn: "",
+			checkOut: ""
+		};
 	}
 
 	render() {
@@ -16,7 +20,7 @@ class Search extends React.Component {
 						<input
 							type="text"
 							className="form-control"
-							placeholder="Search"
+							placeholder="Search by city or hostel name..."
 						/>
 						<div className="input-group-btn">
 							<button className="btn btn-default" type="submit">
@@ -31,7 +35,7 @@ class Search extends React.Component {
 						<input
 							type="text"
 							className="form-control"
-							placeholder="Search"
+							placeholder="Enter DD/MM/YYYY"
 						/>
 						<div className="input-group-btn">
 							<button className="btn btn-default" type="submit">
@@ -46,7 +50,7 @@ class Search extends React.Component {
 						<input
 							type="text"
 							className="form-control"
-							placeholder="Search"
+							placeholder="Enter DD/MM/YYYY"
 						/>
 						<div className="input-group-btn">
 							<button className="btn btn-default" type="submit">
