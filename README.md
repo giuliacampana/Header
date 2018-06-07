@@ -1,6 +1,6 @@
-# Project Name
+# HostelWorld Clone: RUinn
 
-> Project description
+> For our front-end capstone project at Hack Reactor, I worked in a team of four to develop a clone of a hostel listing page from HostelWorld.com. This repo contains the top part of the page, which we named the "Header." It contains many components nested inside each other. Even though it is complex, the aesthetic of the header remains clean and organized.
 
 ## Related Projects
 
