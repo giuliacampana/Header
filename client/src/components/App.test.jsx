@@ -1,6 +1,11 @@
-import * as React from "react";
+import Enzyme from "enzyme";
+import Adapter from "enzyme-adapter-react-16";
+
+Enzyme.configure({ adapter: new Adapter() });
+
+import React from "react";
 import { shallow } from "enzyme";
-import { shallowToJSON } from "enzyme-to-json";
+// import { shallowToJSON } from "enzyme-to-json";
 
 // https://github.com/vjwilson/enzyme-example-jest
 
@@ -8,7 +13,6 @@ import App from "./App";
 
 describe("App", () => {
 	test("should render correctly", () => {
-		const wrapper = shallow(<App />);
-		expect(shallowToJSON(wrapper)).toMatchSnapshot();
+		expect(shallow(<App />)).toMatchSnapshot();
 	});
 });
