@@ -68,7 +68,6 @@ class App extends React.Component {
 	}
 
 	toggleCarousel() {
-		console.log("enters func");
 		this.setState(prevState => ({
 			carousel: !prevState.carousel
 		}));

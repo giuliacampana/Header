@@ -11,59 +11,50 @@ class Search extends React.Component {
 		return (
 			<div id="search">
 				<div id="searchDiv"> LOCATION </div>
-				<div
-					className="input-group add-on col-md-2 date datepicker"
-					data-date-format="yyyy-mm-dd"
-				>
-					<input
-						name="name"
-						value=""
-						type="text"
-						className="form-control date-picker"
-						data-date-format="yyyy-mm-dd"
-					/>
-					<div className="input-group-btn">
-						<button className="btn btn-default">
-							<i className="fa fa-compass" />
-						</button>
+				<form>
+					<div className="input-group">
+						<input
+							type="text"
+							className="form-control"
+							placeholder="Search"
+						/>
+						<div className="input-group-btn">
+							<button className="btn btn-default" type="submit">
+								<i className="fa fa-compass" />
+							</button>
+						</div>
 					</div>
-				</div>
+				</form>
 				<div id="searchDiv"> CHECK IN </div>
-				<div
-					className="input-group add-on col-md-2 date datepicker"
-					data-date-format="yyyy-mm-dd"
-				>
-					<input
-						name="name"
-						value=""
-						type="text"
-						className="form-control date-picker"
-						data-date-format="yyyy-mm-dd"
-					/>
-					<div className="input-group-btn">
-						<button className="btn btn-default">
-							<i className="fa fa-calendar" />
-						</button>
+				<form>
+					<div className="input-group">
+						<input
+							type="text"
+							className="form-control"
+							placeholder="Search"
+						/>
+						<div className="input-group-btn">
+							<button className="btn btn-default" type="submit">
+								<i className="fa fa-calendar" />
+							</button>
+						</div>
 					</div>
-				</div>
+				</form>
 				<div id="searchDiv"> CHECK OUT </div>
-				<div
-					className="input-group add-on col-md-2 date datepicker"
-					data-date-format="yyyy-mm-dd"
-				>
-					<input
-						name="name"
-						value=""
-						type="text"
-						className="form-control date-picker"
-						data-date-format="yyyy-mm-dd"
-					/>
-					<div className="input-group-btn">
-						<button className="btn btn-default">
-							<i className="fa fa-calendar" />
-						</button>
+				<form>
+					<div className="input-group">
+						<input
+							type="text"
+							className="form-control"
+							placeholder="Search"
+						/>
+						<div className="input-group-btn">
+							<button className="btn btn-default" type="submit">
+								<i className="fa fa-calendar" />
+							</button>
+						</div>
 					</div>
-				</div>
+				</form>
 				<div id="searchDiv">
 					{" "}
 					GUESTS<br />
