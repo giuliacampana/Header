@@ -1,864 +1,1314 @@
 [
 	{
-		"id": "1913",
-		"location_id": "3716",
+		"id": "99-126-3707",
+		"location_id": 55,
+		"hostel_name": "Kemmer-McGlynn",
+		"street_name": "6 Talisman Circle",
+		"features": [{ "wifi": false, "coffee": true }],
 		"photos": [
-			{ "url": "http://dummyimage.com/241x245.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/141x104.png/dddddd/000000" }
+			{ "url": "http://dummyimage.com/250x176.png/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/201x127.jpg/dddddd/000000" }
 		]
 	},
 	{
-		"id": "1130",
-		"location_id": "8829",
+		"id": "79-601-0757",
+		"location_id": 84,
+		"hostel_name": "Volkman Group",
+		"street_name": "9973 Mccormick Alley",
+		"features": [
+			{ "wifi": false, "coffee": false },
+			{ "wifi": false, "coffee": true }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/202x136.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/230x240.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/215x163.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/188x201.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/192x101.png/ff4444/ffffff" }
+			{ "url": "http://dummyimage.com/107x243.png/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/206x186.png/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/233x149.jpg/5fa2dd/ffffff" }
 		]
 	},
 	{
-		"id": "6778",
-		"location_id": "7867",
+		"id": "23-626-3736",
+		"location_id": 21,
+		"hostel_name": "Muller-Padberg",
+		"street_name": "5709 Ilene Drive",
+		"features": [
+			{ "wifi": true, "coffee": true },
+			{ "wifi": false, "coffee": false }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/155x173.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/148x169.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/220x214.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/244x130.png/ff4444/ffffff" }
+			{ "url": "http://dummyimage.com/232x119.bmp/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/114x101.bmp/dddddd/000000" },
+			{ "url": "http://dummyimage.com/230x246.jpg/5fa2dd/ffffff" }
 		]
 	},
 	{
-		"id": "0373",
-		"location_id": "8065",
+		"id": "36-196-1523",
+		"location_id": 37,
+		"hostel_name": "Nikolaus-Ward",
+		"street_name": "28 Nelson Alley",
+		"features": [
+			{ "wifi": false, "coffee": true },
+			{ "wifi": true, "coffee": true }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/199x132.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/163x248.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/115x234.jpg/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/223x168.png/dddddd/000000" }
 		]
 	},
 	{
-		"id": "2474",
-		"location_id": "9171",
+		"id": "32-340-8285",
+		"location_id": 24,
+		"hostel_name": "Stanton and Sons",
+		"street_name": "82711 South Lane",
+		"features": [{ "wifi": false, "coffee": false }],
 		"photos": [
-			{ "url": "http://dummyimage.com/246x107.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/109x187.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/189x169.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/135x182.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/236x192.png/ff4444/ffffff" }
+			{ "url": "http://dummyimage.com/174x175.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/120x236.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/245x234.bmp/ff4444/ffffff" }
 		]
 	},
 	{
-		"id": "6183",
-		"location_id": "3350",
+		"id": "78-867-0566",
+		"location_id": 13,
+		"hostel_name": "Reinger, Lockman and Gulgowski",
+		"street_name": "3884 6th Junction",
+		"features": [
+			{ "wifi": false, "coffee": true },
+			{ "wifi": true, "coffee": true }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/138x176.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/219x129.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/210x178.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/129x249.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/189x212.bmp/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/241x175.bmp/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/137x169.png/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/136x114.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/147x219.png/dddddd/000000" }
 		]
 	},
 	{
-		"id": "2793",
-		"location_id": "5057",
+		"id": "97-485-1529",
+		"location_id": 79,
+		"hostel_name": "Batz-Strosin",
+		"street_name": "0 Schiller Parkway",
+		"features": [{ "wifi": false, "coffee": true }],
 		"photos": [
-			{ "url": "http://dummyimage.com/144x241.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/111x180.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/227x172.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/105x166.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/205x135.png/cc0000/ffffff" }
+			{ "url": "http://dummyimage.com/245x181.jpg/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/203x159.png/dddddd/000000" },
+			{ "url": "http://dummyimage.com/249x172.jpg/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/195x120.png/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/113x145.bmp/ff4444/ffffff" }
 		]
 	},
 	{
-		"id": "5673",
-		"location_id": "9559",
-		"photos": [{ "url": "http://dummyimage.com/234x132.png/5fa2dd/ffffff" }]
-	},
-	{
-		"id": "0255",
-		"location_id": "3279",
+		"id": "99-178-4713",
+		"location_id": 1,
+		"hostel_name": "Kreiger LLC",
+		"street_name": "09696 8th Park",
+		"features": [
+			{ "wifi": true, "coffee": true },
+			{ "wifi": true, "coffee": true }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/198x106.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/195x220.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/156x209.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/241x139.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/213x111.png/ff4444/ffffff" }
+			{ "url": "http://dummyimage.com/236x148.jpg/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/119x146.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/168x202.png/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/168x219.png/cc0000/ffffff" }
 		]
-	},
-	{
-		"id": "7785",
-		"location_id": "6424",
-		"photos": [{ "url": "http://dummyimage.com/162x208.png/dddddd/000000" }]
-	},
-	{
-		"id": "9414",
-		"location_id": "1141",
-		"photos": [{ "url": "http://dummyimage.com/178x168.png/ff4444/ffffff" }]
 	},
 	{
-		"id": "4006",
-		"location_id": "1968",
+		"id": "59-154-7819",
+		"location_id": 26,
+		"hostel_name": "Streich and Sons",
+		"street_name": "74 Sheridan Road",
+		"features": [{ "wifi": true, "coffee": true }],
 		"photos": [
-			{ "url": "http://dummyimage.com/129x141.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/193x193.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/170x126.png/dddddd/000000" },
+			{ "url": "http://dummyimage.com/144x205.bmp/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/194x168.jpg/dddddd/000000" }
 		]
 	},
 	{
-		"id": "3414",
-		"location_id": "7487",
+		"id": "61-564-5648",
+		"location_id": 56,
+		"hostel_name": "Blick, Rempel and Bartoletti",
+		"street_name": "5767 Oakridge Junction",
+		"features": [
+			{ "wifi": true, "coffee": false },
+			{ "wifi": true, "coffee": true }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/144x172.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/227x231.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/164x235.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/157x247.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/220x247.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/124x128.png/dddddd/000000" },
+			{ "url": "http://dummyimage.com/191x211.jpg/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/210x177.png/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/209x106.jpg/5fa2dd/ffffff" }
 		]
-	},
-	{
-		"id": "2318",
-		"location_id": "0912",
-		"photos": [{ "url": "http://dummyimage.com/124x183.png/ff4444/ffffff" }]
 	},
 	{
-		"id": "4066",
-		"location_id": "3784",
+		"id": "64-519-7618",
+		"location_id": 99,
+		"hostel_name": "Bashirian-Hermann",
+		"street_name": "11569 Merchant Way",
+		"features": [
+			{ "wifi": true, "coffee": true },
+			{ "wifi": false, "coffee": true }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/222x207.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/137x106.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/217x114.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/250x108.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/201x233.png/dddddd/000000" }
+			{ "url": "http://dummyimage.com/171x124.png/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/211x236.jpg/dddddd/000000" },
+			{ "url": "http://dummyimage.com/221x241.jpg/5fa2dd/ffffff" }
 		]
 	},
 	{
-		"id": "5534",
-		"location_id": "8336",
+		"id": "34-404-9427",
+		"location_id": 46,
+		"hostel_name": "Lind-Schroeder",
+		"street_name": "246 Jay Park",
+		"features": [
+			{ "wifi": false, "coffee": true },
+			{ "wifi": true, "coffee": false }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/215x188.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/118x215.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/106x244.bmp/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/142x140.png/ff4444/ffffff" }
 		]
 	},
 	{
-		"id": "6434",
-		"location_id": "0599",
+		"id": "33-144-1178",
+		"location_id": 37,
+		"hostel_name": "Goyette LLC",
+		"street_name": "86860 Rigney Place",
+		"features": [{ "wifi": false, "coffee": false }],
 		"photos": [
-			{ "url": "http://dummyimage.com/219x245.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/185x199.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/195x115.png/ff4444/ffffff" }
+			{ "url": "http://dummyimage.com/236x233.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/227x127.bmp/dddddd/000000" },
+			{ "url": "http://dummyimage.com/217x108.jpg/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/104x170.bmp/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/168x202.png/ff4444/ffffff" }
 		]
 	},
 	{
-		"id": "0037",
-		"location_id": "6229",
-		"photos": [{ "url": "http://dummyimage.com/222x163.png/dddddd/000000" }]
+		"id": "88-495-1496",
+		"location_id": 58,
+		"hostel_name": "Boyer LLC",
+		"street_name": "27 Laurel Lane",
+		"features": [{ "wifi": true, "coffee": false }],
+		"photos": [{ "url": "http://dummyimage.com/209x110.jpg/dddddd/000000" }]
 	},
 	{
-		"id": "9782",
-		"location_id": "2515",
+		"id": "40-386-9499",
+		"location_id": 54,
+		"hostel_name": "Abshire, Daugherty and Beer",
+		"street_name": "9 Pawling Lane",
+		"features": [
+			{ "wifi": true, "coffee": false },
+			{ "wifi": true, "coffee": false }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/220x241.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/149x113.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/216x202.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/185x233.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/106x179.jpg/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/150x174.png/5fa2dd/ffffff" }
 		]
-	},
-	{
-		"id": "6426",
-		"location_id": "2296",
-		"photos": [{ "url": "http://dummyimage.com/132x182.png/dddddd/000000" }]
-	},
-	{
-		"id": "8664",
-		"location_id": "7235",
-		"photos": [{ "url": "http://dummyimage.com/159x211.png/5fa2dd/ffffff" }]
 	},
 	{
-		"id": "4536",
-		"location_id": "2878",
+		"id": "53-436-2539",
+		"location_id": 80,
+		"hostel_name": "Balistreri, Keeling and Considine",
+		"street_name": "569 Spenser Court",
+		"features": [
+			{ "wifi": true, "coffee": true },
+			{ "wifi": true, "coffee": false }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/137x187.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/195x127.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/240x203.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/140x188.png/cc0000/ffffff" }
+			{ "url": "http://dummyimage.com/163x155.jpg/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/182x179.bmp/dddddd/000000" }
 		]
 	},
 	{
-		"id": "7106",
-		"location_id": "3161",
+		"id": "63-497-1536",
+		"location_id": 64,
+		"hostel_name": "Bernier-Stehr",
+		"street_name": "591 Farragut Avenue",
+		"features": [
+			{ "wifi": true, "coffee": false },
+			{ "wifi": false, "coffee": true }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/154x201.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/139x214.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/128x158.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/142x131.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/234x132.png/ff4444/ffffff" }
+			{ "url": "http://dummyimage.com/209x106.bmp/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/184x166.jpg/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/136x136.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/149x209.png/dddddd/000000" }
 		]
 	},
 	{
-		"id": "6992",
-		"location_id": "0908",
+		"id": "68-309-1666",
+		"location_id": 56,
+		"hostel_name": "Rosenbaum Inc",
+		"street_name": "48 Texas Place",
+		"features": [{ "wifi": false, "coffee": false }],
 		"photos": [
-			{ "url": "http://dummyimage.com/183x186.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/157x227.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/120x179.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/211x195.png/cc0000/ffffff" }
+			{ "url": "http://dummyimage.com/141x121.png/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/104x152.png/dddddd/000000" },
+			{ "url": "http://dummyimage.com/152x101.jpg/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/139x128.bmp/dddddd/000000" }
 		]
 	},
 	{
-		"id": "4307",
-		"location_id": "5304",
+		"id": "66-815-1240",
+		"location_id": 89,
+		"hostel_name": "Torp-McCullough",
+		"street_name": "51057 Dovetail Junction",
+		"features": [
+			{ "wifi": false, "coffee": true },
+			{ "wifi": true, "coffee": true }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/189x145.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/163x104.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/163x209.png/cc0000/ffffff" }
+			{ "url": "http://dummyimage.com/169x144.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/135x211.jpg/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/163x113.png/dddddd/000000" },
+			{ "url": "http://dummyimage.com/138x164.jpg/dddddd/000000" }
 		]
 	},
 	{
-		"id": "0120",
-		"location_id": "9612",
+		"id": "39-005-0745",
+		"location_id": 28,
+		"hostel_name": "Effertz Group",
+		"street_name": "3526 Center Junction",
+		"features": [
+			{ "wifi": false, "coffee": false },
+			{ "wifi": false, "coffee": true }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/165x224.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/237x205.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/237x200.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/222x149.png/cc0000/ffffff" }
+			{ "url": "http://dummyimage.com/193x124.jpg/dddddd/000000" },
+			{ "url": "http://dummyimage.com/129x127.bmp/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/111x134.png/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/133x195.png/ff4444/ffffff" }
 		]
 	},
 	{
-		"id": "3357",
-		"location_id": "9162",
+		"id": "10-627-7025",
+		"location_id": 71,
+		"hostel_name": "Tillman Inc",
+		"street_name": "645 Mitchell Court",
+		"features": [{ "wifi": false, "coffee": false }],
 		"photos": [
-			{ "url": "http://dummyimage.com/227x174.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/145x198.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/141x152.png/ff4444/ffffff" }
+			{ "url": "http://dummyimage.com/172x196.jpg/dddddd/000000" },
+			{ "url": "http://dummyimage.com/220x202.png/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/226x112.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/117x171.jpg/dddddd/000000" }
 		]
 	},
 	{
-		"id": "4756",
-		"location_id": "8771",
+		"id": "51-417-4533",
+		"location_id": 49,
+		"hostel_name": "Kozey, Tromp and Shields",
+		"street_name": "2 Ludington Hill",
+		"features": [
+			{ "wifi": false, "coffee": true },
+			{ "wifi": true, "coffee": true }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/189x236.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/155x105.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/109x250.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/121x124.png/dddddd/000000" }
+			{ "url": "http://dummyimage.com/233x116.png/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/235x197.jpg/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/117x240.bmp/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/245x160.bmp/5fa2dd/ffffff" }
 		]
 	},
 	{
-		"id": "2895",
-		"location_id": "0934",
+		"id": "44-677-6751",
+		"location_id": 1,
+		"hostel_name": "Hilpert Group",
+		"street_name": "74551 Leroy Point",
+		"features": [{ "wifi": false, "coffee": false }],
 		"photos": [
-			{ "url": "http://dummyimage.com/228x110.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/225x132.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/173x164.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/160x145.png/dddddd/000000" }
+			{ "url": "http://dummyimage.com/155x188.jpg/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/198x197.png/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/164x210.png/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/212x198.png/ff4444/ffffff" }
 		]
 	},
 	{
-		"id": "3282",
-		"location_id": "1540",
+		"id": "69-346-7834",
+		"location_id": 75,
+		"hostel_name": "Ryan-Ernser",
+		"street_name": "7 Di Loreto Way",
+		"features": [
+			{ "wifi": true, "coffee": true },
+			{ "wifi": true, "coffee": true }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/164x248.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/189x233.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/196x191.png/dddddd/000000" }
+			{ "url": "http://dummyimage.com/225x179.png/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/170x142.jpg/cc0000/ffffff" }
 		]
 	},
 	{
-		"id": "5933",
-		"location_id": "0773",
+		"id": "51-240-2621",
+		"location_id": 12,
+		"hostel_name": "Wilkinson-Oberbrunner",
+		"street_name": "832 Forster Terrace",
+		"features": [{ "wifi": true, "coffee": false }],
 		"photos": [
-			{ "url": "http://dummyimage.com/143x128.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/205x161.png/cc0000/ffffff" }
+			{ "url": "http://dummyimage.com/137x195.bmp/dddddd/000000" },
+			{ "url": "http://dummyimage.com/171x221.jpg/ff4444/ffffff" }
 		]
 	},
 	{
-		"id": "6845",
-		"location_id": "6857",
+		"id": "66-610-6702",
+		"location_id": 3,
+		"hostel_name": "Ruecker, Connelly and Volkman",
+		"street_name": "8 Bluejay Park",
+		"features": [{ "wifi": false, "coffee": true }],
 		"photos": [
-			{ "url": "http://dummyimage.com/225x122.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/220x237.png/ff4444/ffffff" }
+			{ "url": "http://dummyimage.com/139x236.bmp/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/223x152.jpg/cc0000/ffffff" }
 		]
 	},
 	{
-		"id": "6722",
-		"location_id": "6057",
-		"photos": [
-			{ "url": "http://dummyimage.com/207x102.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/223x176.png/5fa2dd/ffffff" }
-		]
+		"id": "27-610-3658",
+		"location_id": 65,
+		"hostel_name": "Quigley-Bins",
+		"street_name": "60429 Spaight Alley",
+		"features": [{ "wifi": true, "coffee": false }],
+		"photos": [{ "url": "http://dummyimage.com/139x167.png/cc0000/ffffff" }]
 	},
 	{
-		"id": "3374",
-		"location_id": "1583",
+		"id": "95-919-3818",
+		"location_id": 14,
+		"hostel_name": "Rolfson LLC",
+		"street_name": "668 Coleman Plaza",
+		"features": [{ "wifi": true, "coffee": true }],
+		"photos": [{ "url": "http://dummyimage.com/157x199.jpg/cc0000/ffffff" }]
+	},
+	{
+		"id": "59-152-1000",
+		"location_id": 68,
+		"hostel_name": "Swift Group",
+		"street_name": "7 Messerschmidt Junction",
+		"features": [
+			{ "wifi": true, "coffee": false },
+			{ "wifi": false, "coffee": false }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/166x189.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/189x115.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/111x173.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/112x207.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/154x213.png/ff4444/ffffff" }
+			{ "url": "http://dummyimage.com/126x174.jpg/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/133x170.bmp/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/223x228.bmp/cc0000/ffffff" }
 		]
+	},
+	{
+		"id": "21-143-4396",
+		"location_id": 78,
+		"hostel_name": "Hamill-Corwin",
+		"street_name": "9715 Gateway Junction",
+		"features": [
+			{ "wifi": false, "coffee": false },
+			{ "wifi": true, "coffee": true }
+		],
+		"photos": [{ "url": "http://dummyimage.com/113x163.png/cc0000/ffffff" }]
 	},
 	{
-		"id": "3751",
-		"location_id": "0572",
-		"photos": [{ "url": "http://dummyimage.com/119x155.png/cc0000/ffffff" }]
+		"id": "28-102-7264",
+		"location_id": 79,
+		"hostel_name": "Medhurst-Ritchie",
+		"street_name": "09725 Blue Bill Park Lane",
+		"features": [{ "wifi": false, "coffee": true }],
+		"photos": [
+			{ "url": "http://dummyimage.com/216x187.jpg/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/228x212.png/cc0000/ffffff" }
+		]
 	},
 	{
-		"id": "6996",
-		"location_id": "7341",
+		"id": "03-178-0236",
+		"location_id": 55,
+		"hostel_name": "Dooley, Witting and Stehr",
+		"street_name": "7 Luster Crossing",
+		"features": [{ "wifi": true, "coffee": false }],
 		"photos": [
-			{ "url": "http://dummyimage.com/135x188.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/158x204.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/141x199.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/140x244.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/170x125.png/dddddd/000000" }
+			{ "url": "http://dummyimage.com/230x180.jpg/dddddd/000000" },
+			{ "url": "http://dummyimage.com/248x231.bmp/cc0000/ffffff" }
 		]
 	},
 	{
-		"id": "2327",
-		"location_id": "7048",
+		"id": "96-650-9568",
+		"location_id": 62,
+		"hostel_name": "Wolf, Armstrong and Bashirian",
+		"street_name": "9 Northland Pass",
+		"features": [{ "wifi": true, "coffee": false }],
 		"photos": [
-			{ "url": "http://dummyimage.com/200x160.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/215x159.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/179x213.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/105x157.png/dddddd/000000" }
+			{ "url": "http://dummyimage.com/110x125.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/160x195.jpg/5fa2dd/ffffff" }
 		]
 	},
 	{
-		"id": "4960",
-		"location_id": "9755",
+		"id": "07-294-5075",
+		"location_id": 66,
+		"hostel_name": "Kulas-Rogahn",
+		"street_name": "69052 Kennedy Junction",
+		"features": [{ "wifi": false, "coffee": true }],
 		"photos": [
-			{ "url": "http://dummyimage.com/147x238.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/227x243.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/138x197.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/238x164.jpg/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/211x203.png/cc0000/ffffff" }
 		]
 	},
 	{
-		"id": "6244",
-		"location_id": "1332",
+		"id": "14-484-1289",
+		"location_id": 3,
+		"hostel_name": "Wilkinson, Huels and Nolan",
+		"street_name": "291 Southridge Lane",
+		"features": [{ "wifi": true, "coffee": true }],
 		"photos": [
-			{ "url": "http://dummyimage.com/245x248.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/166x132.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/161x241.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/208x214.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/237x176.png/cc0000/ffffff" }
+			{ "url": "http://dummyimage.com/149x235.png/dddddd/000000" },
+			{ "url": "http://dummyimage.com/145x249.bmp/5fa2dd/ffffff" }
 		]
 	},
 	{
-		"id": "2833",
-		"location_id": "6191",
+		"id": "26-513-4028",
+		"location_id": 37,
+		"hostel_name": "Mayer, Raynor and Huels",
+		"street_name": "28110 David Court",
+		"features": [
+			{ "wifi": true, "coffee": false },
+			{ "wifi": true, "coffee": true }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/177x177.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/177x120.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/207x223.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/155x209.png/dddddd/000000" }
+			{ "url": "http://dummyimage.com/221x225.png/dddddd/000000" },
+			{ "url": "http://dummyimage.com/112x172.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/230x142.png/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/101x118.bmp/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/129x194.jpg/cc0000/ffffff" }
 		]
 	},
 	{
-		"id": "8596",
-		"location_id": "7594",
+		"id": "60-369-6142",
+		"location_id": 80,
+		"hostel_name": "Prosacco-Heaney",
+		"street_name": "857 Saint Paul Junction",
+		"features": [{ "wifi": false, "coffee": true }],
 		"photos": [
-			{ "url": "http://dummyimage.com/226x212.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/202x181.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/230x237.png/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/151x212.bmp/dddddd/000000" },
+			{ "url": "http://dummyimage.com/164x142.bmp/dddddd/000000" },
+			{ "url": "http://dummyimage.com/132x222.bmp/ff4444/ffffff" }
 		]
 	},
 	{
-		"id": "8816",
-		"location_id": "8242",
+		"id": "22-673-5786",
+		"location_id": 37,
+		"hostel_name": "Streich-Lubowitz",
+		"street_name": "79 Mosinee Junction",
+		"features": [
+			{ "wifi": true, "coffee": false },
+			{ "wifi": false, "coffee": true }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/239x139.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/195x222.png/dddddd/000000" }
+			{ "url": "http://dummyimage.com/143x102.bmp/dddddd/000000" },
+			{ "url": "http://dummyimage.com/136x121.png/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/129x221.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/240x117.png/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/165x236.png/cc0000/ffffff" }
 		]
+	},
+	{
+		"id": "72-153-9102",
+		"location_id": 50,
+		"hostel_name": "Abbott-Stokes",
+		"street_name": "0573 Sunbrook Drive",
+		"features": [{ "wifi": false, "coffee": false }],
+		"photos": [{ "url": "http://dummyimage.com/122x229.png/5fa2dd/ffffff" }]
+	},
+	{
+		"id": "10-309-1008",
+		"location_id": 23,
+		"hostel_name": "Fahey Group",
+		"street_name": "66 Manley Center",
+		"features": [{ "wifi": false, "coffee": false }],
+		"photos": [{ "url": "http://dummyimage.com/217x171.jpg/cc0000/ffffff" }]
 	},
 	{
-		"id": "5092",
-		"location_id": "5889",
-		"photos": [{ "url": "http://dummyimage.com/180x236.png/dddddd/000000" }]
+		"id": "64-682-1823",
+		"location_id": 49,
+		"hostel_name": "Langworth LLC",
+		"street_name": "796 Talmadge Point",
+		"features": [{ "wifi": true, "coffee": false }],
+		"photos": [{ "url": "http://dummyimage.com/132x114.jpg/ff4444/ffffff" }]
 	},
 	{
-		"id": "4476",
-		"location_id": "3529",
+		"id": "95-778-0632",
+		"location_id": 73,
+		"hostel_name": "Ward-Heathcote",
+		"street_name": "6844 8th Place",
+		"features": [{ "wifi": false, "coffee": true }],
 		"photos": [
-			{ "url": "http://dummyimage.com/234x135.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/238x109.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/152x143.png/cc0000/ffffff" }
+			{ "url": "http://dummyimage.com/223x119.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/239x118.bmp/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/212x116.jpg/dddddd/000000" },
+			{ "url": "http://dummyimage.com/192x248.bmp/5fa2dd/ffffff" }
 		]
+	},
+	{
+		"id": "53-217-6377",
+		"location_id": 60,
+		"hostel_name": "Collier, Donnelly and Schoen",
+		"street_name": "650 Randy Parkway",
+		"features": [{ "wifi": true, "coffee": false }],
+		"photos": [{ "url": "http://dummyimage.com/101x194.jpg/5fa2dd/ffffff" }]
 	},
 	{
-		"id": "5393",
-		"location_id": "8347",
+		"id": "88-473-3434",
+		"location_id": 30,
+		"hostel_name": "Feeney Group",
+		"street_name": "2 Burrows Park",
+		"features": [
+			{ "wifi": false, "coffee": false },
+			{ "wifi": true, "coffee": false }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/238x142.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/100x138.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/102x195.png/cc0000/ffffff" }
+			{ "url": "http://dummyimage.com/245x219.bmp/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/224x193.bmp/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/176x189.png/ff4444/ffffff" }
 		]
+	},
+	{
+		"id": "63-413-3507",
+		"location_id": 1,
+		"hostel_name": "Homenick, Kuhn and Hessel",
+		"street_name": "638 Pankratz Trail",
+		"features": [{ "wifi": true, "coffee": false }],
+		"photos": [{ "url": "http://dummyimage.com/109x149.jpg/ff4444/ffffff" }]
 	},
 	{
-		"id": "0717",
-		"location_id": "2395",
+		"id": "90-694-6859",
+		"location_id": 5,
+		"hostel_name": "Schmeler and Sons",
+		"street_name": "049 Arapahoe Crossing",
+		"features": [
+			{ "wifi": true, "coffee": false },
+			{ "wifi": true, "coffee": false }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/205x230.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/213x140.png/ff4444/ffffff" }
+			{ "url": "http://dummyimage.com/104x182.bmp/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/149x242.png/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/121x213.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/148x126.jpg/dddddd/000000" },
+			{ "url": "http://dummyimage.com/243x140.jpg/cc0000/ffffff" }
 		]
 	},
 	{
-		"id": "8116",
-		"location_id": "2433",
+		"id": "45-997-5064",
+		"location_id": 67,
+		"hostel_name": "Ritchie, Rowe and Fadel",
+		"street_name": "5227 Sachs Hill",
+		"features": [{ "wifi": false, "coffee": false }],
 		"photos": [
-			{ "url": "http://dummyimage.com/155x213.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/107x245.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/164x153.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/239x178.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/189x225.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/155x175.png/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/143x170.jpg/ff4444/ffffff" }
 		]
 	},
 	{
-		"id": "4327",
-		"location_id": "1632",
+		"id": "19-098-5774",
+		"location_id": 42,
+		"hostel_name": "Cormier, Spencer and Senger",
+		"street_name": "300 Sommers Alley",
+		"features": [{ "wifi": true, "coffee": false }],
 		"photos": [
-			{ "url": "http://dummyimage.com/203x187.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/196x151.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/194x162.png/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/247x223.jpg/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/131x107.bmp/dddddd/000000" },
+			{ "url": "http://dummyimage.com/214x171.bmp/ff4444/ffffff" }
 		]
 	},
 	{
-		"id": "5519",
-		"location_id": "1895",
-		"photos": [{ "url": "http://dummyimage.com/143x210.png/ff4444/ffffff" }]
+		"id": "51-632-8357",
+		"location_id": 100,
+		"hostel_name": "Halvorson Group",
+		"street_name": "24 Division Avenue",
+		"features": [{ "wifi": false, "coffee": true }],
+		"photos": [
+			{ "url": "http://dummyimage.com/191x220.jpg/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/232x192.jpg/dddddd/000000" },
+			{ "url": "http://dummyimage.com/105x165.jpg/5fa2dd/ffffff" }
+		]
 	},
 	{
-		"id": "7683",
-		"location_id": "7271",
+		"id": "27-452-0455",
+		"location_id": 74,
+		"hostel_name": "Purdy, Ledner and Corwin",
+		"street_name": "8226 Moulton Way",
+		"features": [
+			{ "wifi": false, "coffee": true },
+			{ "wifi": true, "coffee": false }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/108x186.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/225x152.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/197x127.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/126x209.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/153x203.png/cc0000/ffffff" }
+			{ "url": "http://dummyimage.com/105x110.png/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/124x136.png/dddddd/000000" },
+			{ "url": "http://dummyimage.com/156x222.jpg/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/147x125.jpg/dddddd/000000" }
 		]
 	},
 	{
-		"id": "6405",
-		"location_id": "8595",
-		"photos": [{ "url": "http://dummyimage.com/149x217.png/cc0000/ffffff" }]
+		"id": "77-921-9934",
+		"location_id": 2,
+		"hostel_name": "Schaden-Walker",
+		"street_name": "1 Thierer Parkway",
+		"features": [
+			{ "wifi": true, "coffee": false },
+			{ "wifi": true, "coffee": false }
+		],
+		"photos": [
+			{ "url": "http://dummyimage.com/176x123.bmp/dddddd/000000" },
+			{ "url": "http://dummyimage.com/228x150.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/250x239.jpg/dddddd/000000" }
+		]
 	},
 	{
-		"id": "4609",
-		"location_id": "1172",
-		"photos": [{ "url": "http://dummyimage.com/137x141.png/cc0000/ffffff" }]
+		"id": "31-722-7868",
+		"location_id": 12,
+		"hostel_name": "Hand-Shanahan",
+		"street_name": "298 Doe Crossing Terrace",
+		"features": [
+			{ "wifi": true, "coffee": false },
+			{ "wifi": true, "coffee": false }
+		],
+		"photos": [
+			{ "url": "http://dummyimage.com/161x225.jpg/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/166x153.bmp/5fa2dd/ffffff" }
+		]
 	},
 	{
-		"id": "7819",
-		"location_id": "6219",
-		"photos": [{ "url": "http://dummyimage.com/164x115.png/dddddd/000000" }]
+		"id": "46-203-4735",
+		"location_id": 1,
+		"hostel_name": "Prosacco and Sons",
+		"street_name": "69234 Northfield Trail",
+		"features": [
+			{ "wifi": true, "coffee": true },
+			{ "wifi": true, "coffee": false }
+		],
+		"photos": [{ "url": "http://dummyimage.com/192x210.jpg/dddddd/000000" }]
 	},
 	{
-		"id": "0899",
-		"location_id": "1245",
+		"id": "70-228-1240",
+		"location_id": 49,
+		"hostel_name": "Rolfson LLC",
+		"street_name": "416 Oak Junction",
+		"features": [{ "wifi": false, "coffee": false }],
 		"photos": [
-			{ "url": "http://dummyimage.com/181x240.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/205x172.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/211x248.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/144x150.png/ff4444/ffffff" }
+			{ "url": "http://dummyimage.com/139x228.bmp/dddddd/000000" },
+			{ "url": "http://dummyimage.com/231x127.jpg/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/194x152.jpg/dddddd/000000" },
+			{ "url": "http://dummyimage.com/117x174.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/115x246.jpg/5fa2dd/ffffff" }
 		]
 	},
 	{
-		"id": "5704",
-		"location_id": "6684",
+		"id": "24-422-0768",
+		"location_id": 24,
+		"hostel_name": "Hammes-Stokes",
+		"street_name": "010 Sunbrook Plaza",
+		"features": [
+			{ "wifi": false, "coffee": false },
+			{ "wifi": false, "coffee": true }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/114x107.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/227x170.png/dddddd/000000" }
+			{ "url": "http://dummyimage.com/220x128.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/216x129.jpg/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/161x214.jpg/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/111x221.bmp/5fa2dd/ffffff" }
 		]
 	},
 	{
-		"id": "3635",
-		"location_id": "7628",
+		"id": "11-875-7915",
+		"location_id": 53,
+		"hostel_name": "Koepp, Walter and Bogisich",
+		"street_name": "79 Glacier Hill Street",
+		"features": [
+			{ "wifi": false, "coffee": false },
+			{ "wifi": true, "coffee": true }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/163x192.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/195x103.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/123x115.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/159x133.png/ff4444/ffffff" }
+			{ "url": "http://dummyimage.com/125x101.jpg/dddddd/000000" },
+			{ "url": "http://dummyimage.com/178x230.bmp/dddddd/000000" }
 		]
 	},
 	{
-		"id": "4734",
-		"location_id": "4454",
+		"id": "05-514-8993",
+		"location_id": 63,
+		"hostel_name": "Johnston-Bradtke",
+		"street_name": "3982 Manitowish Alley",
+		"features": [{ "wifi": false, "coffee": true }],
 		"photos": [
-			{ "url": "http://dummyimage.com/249x111.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/185x152.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/243x178.bmp/dddddd/000000" },
+			{ "url": "http://dummyimage.com/224x142.bmp/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/111x175.jpg/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/215x124.bmp/dddddd/000000" }
 		]
 	},
 	{
-		"id": "1524",
-		"location_id": "4021",
-		"photos": [
-			{ "url": "http://dummyimage.com/177x207.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/238x106.png/dddddd/000000" }
-		]
+		"id": "10-615-1851",
+		"location_id": 8,
+		"hostel_name": "Bogan Group",
+		"street_name": "8144 Carberry Terrace",
+		"features": [
+			{ "wifi": true, "coffee": true },
+			{ "wifi": true, "coffee": true }
+		],
+		"photos": [{ "url": "http://dummyimage.com/227x187.jpg/5fa2dd/ffffff" }]
 	},
 	{
-		"id": "7342",
-		"location_id": "1989",
+		"id": "24-736-7148",
+		"location_id": 98,
+		"hostel_name": "Bartell-Carter",
+		"street_name": "58327 Clemons Point",
+		"features": [{ "wifi": false, "coffee": true }],
 		"photos": [
-			{ "url": "http://dummyimage.com/214x245.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/125x220.png/dddddd/000000" }
+			{ "url": "http://dummyimage.com/176x193.bmp/dddddd/000000" },
+			{ "url": "http://dummyimage.com/240x191.png/dddddd/000000" }
 		]
 	},
 	{
-		"id": "2613",
-		"location_id": "5026",
+		"id": "38-305-6895",
+		"location_id": 1,
+		"hostel_name": "Labadie-Ratke",
+		"street_name": "4 Summerview Plaza",
+		"features": [{ "wifi": false, "coffee": true }],
 		"photos": [
-			{ "url": "http://dummyimage.com/199x138.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/175x202.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/193x130.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/229x150.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/233x162.png/ff4444/ffffff" }
+			{ "url": "http://dummyimage.com/177x129.bmp/dddddd/000000" },
+			{ "url": "http://dummyimage.com/202x168.jpg/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/236x223.bmp/ff4444/ffffff" }
 		]
 	},
 	{
-		"id": "5547",
-		"location_id": "5243",
+		"id": "94-279-0883",
+		"location_id": 27,
+		"hostel_name": "Wolff, Johnson and Kuhn",
+		"street_name": "2677 Sunfield Pass",
+		"features": [{ "wifi": true, "coffee": true }],
 		"photos": [
-			{ "url": "http://dummyimage.com/206x247.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/119x144.png/cc0000/ffffff" }
+			{ "url": "http://dummyimage.com/233x172.bmp/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/249x187.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/178x185.bmp/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/207x202.png/dddddd/000000" },
+			{ "url": "http://dummyimage.com/245x189.bmp/cc0000/ffffff" }
 		]
 	},
 	{
-		"id": "3344",
-		"location_id": "0428",
+		"id": "07-090-1628",
+		"location_id": 63,
+		"hostel_name": "Quigley-Pouros",
+		"street_name": "7973 Mallard Alley",
+		"features": [
+			{ "wifi": false, "coffee": false },
+			{ "wifi": true, "coffee": false }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/224x180.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/169x233.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/117x194.png/cc0000/ffffff" }
+			{ "url": "http://dummyimage.com/205x122.jpg/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/111x150.jpg/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/194x183.jpg/ff4444/ffffff" }
 		]
 	},
 	{
-		"id": "7672",
-		"location_id": "4158",
+		"id": "83-257-2875",
+		"location_id": 16,
+		"hostel_name": "Lebsack LLC",
+		"street_name": "3 Carey Circle",
+		"features": [{ "wifi": true, "coffee": true }],
 		"photos": [
-			{ "url": "http://dummyimage.com/232x103.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/146x134.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/204x113.png/dddddd/000000" }
+			{ "url": "http://dummyimage.com/242x180.bmp/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/179x215.jpg/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/157x197.jpg/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/244x122.png/dddddd/000000" },
+			{ "url": "http://dummyimage.com/233x128.jpg/ff4444/ffffff" }
 		]
 	},
 	{
-		"id": "2032",
-		"location_id": "0173",
+		"id": "38-688-9776",
+		"location_id": 76,
+		"hostel_name": "Herzog and Sons",
+		"street_name": "98 Farwell Park",
+		"features": [{ "wifi": false, "coffee": false }],
 		"photos": [
-			{ "url": "http://dummyimage.com/161x236.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/113x131.png/ff4444/ffffff" }
+			{ "url": "http://dummyimage.com/142x222.jpg/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/210x187.png/dddddd/000000" }
 		]
-	},
-	{
-		"id": "2016",
-		"location_id": "1295",
-		"photos": [{ "url": "http://dummyimage.com/104x172.png/dddddd/000000" }]
 	},
 	{
-		"id": "7490",
-		"location_id": "6444",
+		"id": "85-227-4833",
+		"location_id": 74,
+		"hostel_name": "Ankunding LLC",
+		"street_name": "053 Ilene Parkway",
+		"features": [{ "wifi": false, "coffee": true }],
 		"photos": [
-			{ "url": "http://dummyimage.com/215x232.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/186x156.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/249x218.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/110x204.png/dddddd/000000" },
+			{ "url": "http://dummyimage.com/161x210.png/cc0000/ffffff" }
 		]
 	},
 	{
-		"id": "3685",
-		"location_id": "0936",
-		"photos": [{ "url": "http://dummyimage.com/204x140.png/cc0000/ffffff" }]
+		"id": "14-738-5357",
+		"location_id": 14,
+		"hostel_name": "Koch Group",
+		"street_name": "405 Norway Maple Lane",
+		"features": [{ "wifi": false, "coffee": false }],
+		"photos": [
+			{ "url": "http://dummyimage.com/244x192.png/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/151x234.bmp/dddddd/000000" }
+		]
 	},
 	{
-		"id": "9469",
-		"location_id": "0435",
+		"id": "34-621-3432",
+		"location_id": 78,
+		"hostel_name": "Ledner LLC",
+		"street_name": "77428 Bunting Center",
+		"features": [{ "wifi": true, "coffee": false }],
 		"photos": [
-			{ "url": "http://dummyimage.com/152x208.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/115x231.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/240x229.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/216x107.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/105x215.png/dddddd/000000" },
+			{ "url": "http://dummyimage.com/132x170.png/dddddd/000000" },
+			{ "url": "http://dummyimage.com/114x248.jpg/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/216x166.png/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/216x193.jpg/dddddd/000000" }
 		]
 	},
 	{
-		"id": "4732",
-		"location_id": "5496",
+		"id": "59-263-7203",
+		"location_id": 8,
+		"hostel_name": "Konopelski-Stark",
+		"street_name": "470 Hermina Terrace",
+		"features": [{ "wifi": false, "coffee": false }],
 		"photos": [
-			{ "url": "http://dummyimage.com/190x104.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/123x177.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/225x201.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/111x129.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/107x155.jpg/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/159x247.png/dddddd/000000" },
+			{ "url": "http://dummyimage.com/118x156.jpg/dddddd/000000" }
 		]
 	},
 	{
-		"id": "7170",
-		"location_id": "1639",
+		"id": "79-867-5664",
+		"location_id": 35,
+		"hostel_name": "Abshire and Sons",
+		"street_name": "3513 Bluejay Hill",
+		"features": [{ "wifi": false, "coffee": false }],
 		"photos": [
-			{ "url": "http://dummyimage.com/125x211.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/148x153.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/154x123.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/244x206.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/196x190.png/dddddd/000000" }
+			{ "url": "http://dummyimage.com/116x167.jpg/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/150x244.jpg/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/210x174.png/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/226x166.bmp/ff4444/ffffff" }
 		]
 	},
 	{
-		"id": "2718",
-		"location_id": "4330",
+		"id": "13-578-4811",
+		"location_id": 44,
+		"hostel_name": "Goodwin-Bosco",
+		"street_name": "7 Stone Corner Terrace",
+		"features": [
+			{ "wifi": false, "coffee": false },
+			{ "wifi": false, "coffee": false }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/130x189.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/119x104.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/233x187.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/115x169.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/219x147.bmp/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/188x172.jpg/ff4444/ffffff" }
 		]
 	},
 	{
-		"id": "3161",
-		"location_id": "5147",
+		"id": "81-429-7837",
+		"location_id": 97,
+		"hostel_name": "Graham, Lowe and Kautzer",
+		"street_name": "949 Mifflin Plaza",
+		"features": [{ "wifi": true, "coffee": true }],
 		"photos": [
-			{ "url": "http://dummyimage.com/171x231.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/166x130.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/226x207.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/145x160.png/cc0000/ffffff" }
+			{ "url": "http://dummyimage.com/234x175.jpg/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/106x183.bmp/dddddd/000000" },
+			{ "url": "http://dummyimage.com/223x127.png/dddddd/000000" },
+			{ "url": "http://dummyimage.com/205x172.jpg/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/135x134.bmp/5fa2dd/ffffff" }
 		]
 	},
 	{
-		"id": "0296",
-		"location_id": "3760",
+		"id": "48-584-8561",
+		"location_id": 26,
+		"hostel_name": "Nader Group",
+		"street_name": "894 Glacier Hill Parkway",
+		"features": [
+			{ "wifi": false, "coffee": true },
+			{ "wifi": false, "coffee": true }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/227x145.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/172x125.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/221x195.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/236x145.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/249x157.jpg/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/106x141.bmp/dddddd/000000" },
+			{ "url": "http://dummyimage.com/104x228.png/dddddd/000000" }
 		]
 	},
 	{
-		"id": "3293",
-		"location_id": "7961",
+		"id": "29-370-4617",
+		"location_id": 40,
+		"hostel_name": "Nolan, Schmidt and Hilpert",
+		"street_name": "700 Iowa Crossing",
+		"features": [{ "wifi": true, "coffee": false }],
 		"photos": [
-			{ "url": "http://dummyimage.com/169x208.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/217x128.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/118x136.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/119x237.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/225x164.jpg/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/193x121.bmp/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/212x225.jpg/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/234x108.png/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/186x241.bmp/dddddd/000000" }
 		]
 	},
 	{
-		"id": "1492",
-		"location_id": "0858",
+		"id": "66-074-9718",
+		"location_id": 53,
+		"hostel_name": "Mante-Carroll",
+		"street_name": "35124 Waubesa Street",
+		"features": [
+			{ "wifi": true, "coffee": true },
+			{ "wifi": false, "coffee": false }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/221x206.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/211x250.png/ff4444/ffffff" }
+			{ "url": "http://dummyimage.com/150x200.jpg/dddddd/000000" },
+			{ "url": "http://dummyimage.com/105x108.bmp/dddddd/000000" }
 		]
 	},
 	{
-		"id": "3649",
-		"location_id": "9369",
+		"id": "34-148-1200",
+		"location_id": 77,
+		"hostel_name": "Stamm, Runte and Von",
+		"street_name": "7337 Dayton Park",
+		"features": [
+			{ "wifi": false, "coffee": true },
+			{ "wifi": true, "coffee": false }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/232x142.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/216x120.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/122x139.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/167x105.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/185x197.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/152x147.bmp/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/246x103.jpg/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/205x183.bmp/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/193x237.bmp/ff4444/ffffff" }
 		]
 	},
 	{
-		"id": "9234",
-		"location_id": "4685",
-		"photos": [{ "url": "http://dummyimage.com/199x125.png/5fa2dd/ffffff" }]
+		"id": "50-805-2560",
+		"location_id": 86,
+		"hostel_name": "Treutel, Streich and Berge",
+		"street_name": "81090 Kingsford Lane",
+		"features": [
+			{ "wifi": false, "coffee": true },
+			{ "wifi": true, "coffee": true }
+		],
+		"photos": [{ "url": "http://dummyimage.com/179x172.jpg/5fa2dd/ffffff" }]
 	},
 	{
-		"id": "2453",
-		"location_id": "6409",
+		"id": "64-188-8793",
+		"location_id": 87,
+		"hostel_name": "Cummerata Group",
+		"street_name": "82 Toban Place",
+		"features": [
+			{ "wifi": true, "coffee": false },
+			{ "wifi": false, "coffee": false }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/216x119.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/175x155.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/111x231.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/230x215.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/162x228.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/220x140.png/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/201x193.png/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/216x237.png/ff4444/ffffff" }
 		]
 	},
 	{
-		"id": "1148",
-		"location_id": "7727",
+		"id": "55-799-7488",
+		"location_id": 26,
+		"hostel_name": "D'Amore, Stanton and Schneider",
+		"street_name": "9 Rieder Drive",
+		"features": [{ "wifi": true, "coffee": true }],
 		"photos": [
-			{ "url": "http://dummyimage.com/175x215.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/100x122.png/ff4444/ffffff" }
+			{ "url": "http://dummyimage.com/249x225.png/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/218x155.png/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/109x227.jpg/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/117x238.png/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/230x167.png/5fa2dd/ffffff" }
 		]
 	},
 	{
-		"id": "7108",
-		"location_id": "1102",
+		"id": "09-467-1963",
+		"location_id": 84,
+		"hostel_name": "Fadel Group",
+		"street_name": "72 Warrior Park",
+		"features": [{ "wifi": true, "coffee": false }],
 		"photos": [
-			{ "url": "http://dummyimage.com/204x168.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/192x232.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/114x180.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/246x159.bmp/dddddd/000000" },
+			{ "url": "http://dummyimage.com/122x146.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/177x179.png/ff4444/ffffff" }
 		]
 	},
 	{
-		"id": "9110",
-		"location_id": "0288",
+		"id": "18-722-7499",
+		"location_id": 24,
+		"hostel_name": "Buckridge, Casper and Haag",
+		"street_name": "4 Nobel Park",
+		"features": [
+			{ "wifi": true, "coffee": true },
+			{ "wifi": true, "coffee": false }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/149x152.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/146x104.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/157x112.jpg/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/116x213.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/108x114.png/dddddd/000000" },
+			{ "url": "http://dummyimage.com/160x200.png/cc0000/ffffff" }
 		]
 	},
 	{
-		"id": "9537",
-		"location_id": "0148",
-		"photos": [{ "url": "http://dummyimage.com/196x237.png/5fa2dd/ffffff" }]
+		"id": "01-618-0433",
+		"location_id": 57,
+		"hostel_name": "Erdman-Greenfelder",
+		"street_name": "000 Golf Junction",
+		"features": [
+			{ "wifi": false, "coffee": true },
+			{ "wifi": true, "coffee": false }
+		],
+		"photos": [{ "url": "http://dummyimage.com/155x192.bmp/cc0000/ffffff" }]
 	},
 	{
-		"id": "3954",
-		"location_id": "6952",
+		"id": "10-813-5618",
+		"location_id": 30,
+		"hostel_name": "Dietrich and Sons",
+		"street_name": "30 Burning Wood Lane",
+		"features": [
+			{ "wifi": true, "coffee": true },
+			{ "wifi": true, "coffee": false }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/135x201.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/231x136.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/180x106.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/249x175.png/ff4444/ffffff" }
+			{ "url": "http://dummyimage.com/173x187.png/dddddd/000000" },
+			{ "url": "http://dummyimage.com/206x124.bmp/dddddd/000000" },
+			{ "url": "http://dummyimage.com/245x234.png/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/130x243.png/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/111x230.jpg/cc0000/ffffff" }
 		]
 	},
 	{
-		"id": "8101",
-		"location_id": "2361",
-		"photos": [{ "url": "http://dummyimage.com/214x171.png/5fa2dd/ffffff" }]
+		"id": "92-769-8473",
+		"location_id": 53,
+		"hostel_name": "Kautzer, Yost and Shields",
+		"street_name": "85 Troy Parkway",
+		"features": [{ "wifi": true, "coffee": true }],
+		"photos": [{ "url": "http://dummyimage.com/176x212.png/dddddd/000000" }]
 	},
 	{
-		"id": "2976",
-		"location_id": "6714",
+		"id": "66-223-3391",
+		"location_id": 36,
+		"hostel_name": "Doyle-Adams",
+		"street_name": "48276 Esch Plaza",
+		"features": [
+			{ "wifi": false, "coffee": false },
+			{ "wifi": true, "coffee": false }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/199x142.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/171x107.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/223x198.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/210x148.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/110x232.bmp/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/110x236.bmp/dddddd/000000" },
+			{ "url": "http://dummyimage.com/211x118.bmp/dddddd/000000" }
 		]
 	},
 	{
-		"id": "5457",
-		"location_id": "4868",
+		"id": "34-056-1986",
+		"location_id": 11,
+		"hostel_name": "Willms LLC",
+		"street_name": "0 Becker Plaza",
+		"features": [{ "wifi": false, "coffee": false }],
 		"photos": [
-			{ "url": "http://dummyimage.com/238x208.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/239x189.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/233x201.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/168x103.bmp/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/188x205.bmp/ff4444/ffffff" }
 		]
 	},
 	{
-		"id": "5806",
-		"location_id": "5902",
+		"id": "88-714-3660",
+		"location_id": 51,
+		"hostel_name": "Runte Group",
+		"street_name": "46917 Roth Park",
+		"features": [
+			{ "wifi": false, "coffee": false },
+			{ "wifi": true, "coffee": false }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/156x200.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/114x181.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/117x213.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/205x115.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/245x222.png/cc0000/ffffff" }
+			{ "url": "http://dummyimage.com/108x211.png/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/109x243.png/dddddd/000000" },
+			{ "url": "http://dummyimage.com/234x213.png/dddddd/000000" }
 		]
 	},
 	{
-		"id": "4191",
-		"location_id": "7713",
+		"id": "25-905-8559",
+		"location_id": 22,
+		"hostel_name": "Johnston LLC",
+		"street_name": "0 Merry Street",
+		"features": [{ "wifi": false, "coffee": true }],
 		"photos": [
-			{ "url": "http://dummyimage.com/139x227.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/216x207.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/229x234.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/154x160.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/205x176.png/cc0000/ffffff" }
+			{ "url": "http://dummyimage.com/225x246.jpg/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/130x223.jpg/ff4444/ffffff" }
 		]
 	},
 	{
-		"id": "2332",
-		"location_id": "2860",
+		"id": "43-469-4819",
+		"location_id": 67,
+		"hostel_name": "Stracke and Sons",
+		"street_name": "7 Fieldstone Plaza",
+		"features": [{ "wifi": true, "coffee": false }],
 		"photos": [
-			{ "url": "http://dummyimage.com/110x113.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/138x171.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/237x121.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/196x248.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/102x219.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/149x170.jpg/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/116x155.png/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/196x227.jpg/ff4444/ffffff" }
 		]
 	},
 	{
-		"id": "9638",
-		"location_id": "1840",
+		"id": "71-104-0260",
+		"location_id": 1,
+		"hostel_name": "Effertz-Mills",
+		"street_name": "14 High Crossing Crossing",
+		"features": [{ "wifi": true, "coffee": false }],
 		"photos": [
-			{ "url": "http://dummyimage.com/220x235.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/205x200.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/127x123.png/cc0000/ffffff" }
+			{ "url": "http://dummyimage.com/156x208.jpg/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/176x208.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/160x157.jpg/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/224x166.png/5fa2dd/ffffff" }
 		]
 	},
 	{
-		"id": "1042",
-		"location_id": "9975",
+		"id": "69-747-9283",
+		"location_id": 57,
+		"hostel_name": "Waelchi-Huel",
+		"street_name": "04 Delaware Pass",
+		"features": [{ "wifi": false, "coffee": false }],
 		"photos": [
-			{ "url": "http://dummyimage.com/165x174.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/223x250.png/ff4444/ffffff" }
+			{ "url": "http://dummyimage.com/183x103.jpg/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/146x101.png/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/183x166.bmp/ff4444/ffffff" }
 		]
 	},
 	{
-		"id": "3952",
-		"location_id": "7676",
+		"id": "65-564-3809",
+		"location_id": 31,
+		"hostel_name": "Dietrich-Baumbach",
+		"street_name": "59 Ridge Oak Road",
+		"features": [
+			{ "wifi": false, "coffee": false },
+			{ "wifi": false, "coffee": false }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/247x102.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/124x242.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/186x131.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/240x116.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/104x118.bmp/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/249x154.png/dddddd/000000" },
+			{ "url": "http://dummyimage.com/169x138.bmp/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/162x245.jpg/dddddd/000000" }
 		]
 	},
 	{
-		"id": "3591",
-		"location_id": "2244",
+		"id": "43-248-8174",
+		"location_id": 28,
+		"hostel_name": "Rowe, Kertzmann and Altenwerth",
+		"street_name": "2 Atwood Park",
+		"features": [
+			{ "wifi": false, "coffee": false },
+			{ "wifi": true, "coffee": false }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/166x202.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/121x114.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/108x180.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/216x206.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/112x103.png/ff4444/ffffff" }
+			{ "url": "http://dummyimage.com/171x158.png/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/167x153.bmp/dddddd/000000" },
+			{ "url": "http://dummyimage.com/169x122.jpg/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/185x249.png/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/141x131.bmp/dddddd/000000" }
 		]
 	},
 	{
-		"id": "8023",
-		"location_id": "1593",
+		"id": "07-310-0526",
+		"location_id": 73,
+		"hostel_name": "Price Group",
+		"street_name": "8790 Bunker Hill Terrace",
+		"features": [{ "wifi": false, "coffee": false }],
 		"photos": [
-			{ "url": "http://dummyimage.com/219x217.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/122x112.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/101x233.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/112x228.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/212x137.bmp/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/189x213.png/5fa2dd/ffffff" }
 		]
 	},
 	{
-		"id": "5720",
-		"location_id": "5018",
+		"id": "94-544-1926",
+		"location_id": 76,
+		"hostel_name": "Ankunding Group",
+		"street_name": "18153 Blackbird Road",
+		"features": [{ "wifi": true, "coffee": true }],
 		"photos": [
-			{ "url": "http://dummyimage.com/119x184.png/5fa2dd/ffffff" },
-			{ "url": "http://dummyimage.com/248x199.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/142x174.png/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/103x208.png/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/134x142.png/dddddd/000000" },
+			{ "url": "http://dummyimage.com/222x108.png/5fa2dd/ffffff" }
 		]
 	},
 	{
-		"id": "4699",
-		"location_id": "2878",
-		"photos": [{ "url": "http://dummyimage.com/237x233.png/5fa2dd/ffffff" }]
+		"id": "63-665-5017",
+		"location_id": 99,
+		"hostel_name": "Hudson, Terry and Tillman",
+		"street_name": "3940 Randy Trail",
+		"features": [{ "wifi": true, "coffee": false }],
+		"photos": [
+			{ "url": "http://dummyimage.com/101x162.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/193x241.bmp/5fa2dd/ffffff" },
+			{ "url": "http://dummyimage.com/135x115.png/dddddd/000000" },
+			{ "url": "http://dummyimage.com/114x205.jpg/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/154x179.jpg/cc0000/ffffff" }
+		]
+	},
+	{
+		"id": "02-840-1584",
+		"location_id": 49,
+		"hostel_name": "Mitchell-Beer",
+		"street_name": "653 Gateway Street",
+		"features": [
+			{ "wifi": true, "coffee": true },
+			{ "wifi": false, "coffee": true }
+		],
+		"photos": [
+			{ "url": "http://dummyimage.com/143x176.png/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/204x157.png/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/137x118.png/ff4444/ffffff" }
+		]
 	},
 	{
-		"id": "8207",
-		"location_id": "6868",
+		"id": "40-608-7934",
+		"location_id": 95,
+		"hostel_name": "Hansen-Mohr",
+		"street_name": "685 Pierstorff Junction",
+		"features": [
+			{ "wifi": true, "coffee": false },
+			{ "wifi": true, "coffee": true }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/118x203.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/160x142.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/132x104.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/152x142.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/193x156.png/ff4444/ffffff" }
+			{ "url": "http://dummyimage.com/105x156.jpg/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/202x198.bmp/dddddd/000000" },
+			{ "url": "http://dummyimage.com/142x188.bmp/ff4444/ffffff" },
+			{ "url": "http://dummyimage.com/159x220.bmp/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/201x219.png/5fa2dd/ffffff" }
 		]
 	},
 	{
-		"id": "6301",
-		"location_id": "6653",
+		"id": "96-804-1257",
+		"location_id": 2,
+		"hostel_name": "Boyle Group",
+		"street_name": "4960 Eagle Crest Trail",
+		"features": [
+			{ "wifi": false, "coffee": false },
+			{ "wifi": true, "coffee": false }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/125x224.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/199x223.png/ff4444/ffffff" },
-			{ "url": "http://dummyimage.com/239x117.png/ff4444/ffffff" }
+			{ "url": "http://dummyimage.com/141x156.bmp/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/142x200.bmp/dddddd/000000" }
 		]
 	},
 	{
-		"id": "3742",
-		"location_id": "6405",
+		"id": "58-888-3973",
+		"location_id": 74,
+		"hostel_name": "Davis-Corkery",
+		"street_name": "3289 Hintze Alley",
+		"features": [{ "wifi": true, "coffee": true }],
 		"photos": [
-			{ "url": "http://dummyimage.com/158x164.png/dddddd/000000" },
-			{ "url": "http://dummyimage.com/248x155.png/5fa2dd/ffffff" }
+			{ "url": "http://dummyimage.com/127x100.bmp/dddddd/000000" },
+			{ "url": "http://dummyimage.com/155x207.jpg/ff4444/ffffff" }
 		]
 	},
 	{
-		"id": "3147",
-		"location_id": "8498",
+		"id": "90-279-3116",
+		"location_id": 33,
+		"hostel_name": "Tremblay, Morar and Cremin",
+		"street_name": "7 Shopko Trail",
+		"features": [
+			{ "wifi": false, "coffee": false },
+			{ "wifi": true, "coffee": true }
+		],
 		"photos": [
-			{ "url": "http://dummyimage.com/103x108.png/cc0000/ffffff" },
-			{ "url": "http://dummyimage.com/204x102.png/dddddd/000000" }
+			{ "url": "http://dummyimage.com/103x158.bmp/dddddd/000000" },
+			{ "url": "http://dummyimage.com/203x132.bmp/cc0000/ffffff" },
+			{ "url": "http://dummyimage.com/113x231.png/cc0000/ffffff" }
 		]
 	}
 ]
