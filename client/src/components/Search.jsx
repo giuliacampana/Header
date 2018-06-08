@@ -159,7 +159,7 @@ class Search extends React.Component {
 						this.getHostelOptions();
 					}}
 					type="button"
-					class="btn btn-search"
+					className="btn btn-search"
 				>
 					Search
 				</button>

@@ -59,7 +59,7 @@ class Modal extends React.Component {
 							<div className="modal-body">
 								<form role="form">
 									<div className="form-group">
-										<label for="usrname">
+										<label htmlFor="usrname">
 											{" "}
 											EMAIL ADDRESS/ USERNAME
 										</label>
@@ -75,7 +75,7 @@ class Modal extends React.Component {
 										/>
 									</div>
 									<div className="form-group">
-										<label for="psw">PASSWORD</label>
+										<label htmlFor="psw">PASSWORD</label>
 										<input
 											type="text"
 											value={this.state.password}

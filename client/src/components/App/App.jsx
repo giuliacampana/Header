@@ -35,7 +35,6 @@ class App extends React.Component {
 		axios
 			.get(`/api/locations/hostels/99-178-4713/info`)
 			.then(response => {
-				console.log(response.data[0]);
 				const features = response.data[0].features[0];
 				if (features.wifi) {
 					this.setState({
@@ -61,7 +60,6 @@ class App extends React.Component {
 
 	getLocationInfo() {
 		axios.get("/api/locations/99/info").then(response => {
-			console.log(response.data[0]);
 			this.setState({
 				city: response.data[0].city,
 				country: response.data[0].country

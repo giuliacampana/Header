@@ -18,7 +18,7 @@ class Carousel extends React.Component {
 					{this.props.photos.map((photo, i) => {
 						if (photo === this.props.photos[0]) {
 							return (
-								<div className="carousel-item active">
+								<div key={0}className="carousel-item active">
 									<img
 										className="d-block w-100"
 										src={photo.url}
@@ -27,7 +27,7 @@ class Carousel extends React.Component {
 							);
 						} else {
 							return (
-								<div className="carousel-item">
+								<div key={i} className="carousel-item">
 									<img
 										className="d-block w-100"
 										src={photo.url}
