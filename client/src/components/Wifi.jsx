@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import ReactTooltip from "react-tooltip";
 
 class Wifi extends React.Component {
 	constructor(props) {
@@ -11,7 +12,12 @@ class Wifi extends React.Component {
 		return (
 			<div>
 				<div className="features">
-					<i className="fas fa-wifi fa-lg" />
+					<a data-tip data-for="wifi">
+						<i className="fas fa-wifi fa-lg" />
+					</a>
+					<ReactTooltip id="wifi" type="dark" effect="float">
+						<span>Free Wifi</span>
+					</ReactTooltip>
 				</div>
 				<div className="circle" />
 			</div>

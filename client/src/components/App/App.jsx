@@ -7,6 +7,7 @@ import Coffee from "../Coffee.jsx";
 import Icons from "../Icons.jsx";
 import Carousel from "../Carousel.jsx";
 
+
 class App extends React.Component {
 	constructor(props) {
 		super(props);

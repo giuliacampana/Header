@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import ReactTooltip from "react-tooltip";
 
 class Coffee extends React.Component {
 	constructor(props) {
@@ -11,7 +12,12 @@ class Coffee extends React.Component {
 		return (
 			<div>
 				<div className="features2">
-					<i className="fas fa-coffee fa-lg" />
+					<a data-tip data-for="coffee">
+						<i className="fas fa-coffee fa-lg" />
+					</a>
+					<ReactTooltip id="coffee" type="dark" effect="float">
+						<span>Free Breakfast</span>
+					</ReactTooltip>
 				</div>
 				<div className="circle2" />
 			</div>
