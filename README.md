@@ -1,6 +1,14 @@
 # HostelWorld Clone: RUinn
 
-> For our front-end capstone project at Hack Reactor, I worked in a team of four to develop a clone of a hostel listing page from HostelWorld.com. This repo contains the top part of the page, which we named the "Header." It contains many components nested inside each other. Even though it is complex, the aesthetic of the header remains clean and organized.
+> The header section of a hostel listing page clone inspired by hostelworld.com
+
+It contains the hostel name, location, and features of the hostel including free wifi or free breakfast. Some dynamic features include the features of the wifi and coffee above the hostel name. When a user hovers over them, a tooltip will show what those features mean.
+
+In addition, a user can click on the background image to show you a carousel of the photos for that specific hostel. The icons in the top right corner of the header are dynamic as well.
+
+When you click on the user icon, it shows a modal where a user can input a email/username and password. Clicking on the magnifying glass icon will show a search component where a user can search for hostels in a specific city.
+
+Lastly, when you click on the menu bars icon, a navigation bar will appear from the right side of the screen to navigate you to other parts of the website.
 
 ## Related Projects
 
