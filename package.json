@@ -22,7 +22,8 @@
     "path": "^0.12.7",
     "prettier": "^1.13.4",
     "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react-dom": "^16.4.0",
+    "sinon": "^5.1.0"
   },
   "devDependencies": {
     "babel-loader": "^7.1.4",

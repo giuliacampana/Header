@@ -4,8 +4,25 @@ import ReactDOM from "react-dom";
 class Modal extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {};
+		this.state = {
+			userName: "",
+			password: ""
+		};
 	}
+
+	handleUserChange(e) {
+		this.setState({
+			userName: e.target.value
+		});
+	}
+
+	handlePasswordChange(e) {
+		this.setState({
+			password: e.target.value
+		});
+	}
+
+	//make a function to make a new user in user table when you click on login
 
 	render() {
 		return (
@@ -50,6 +67,10 @@ class Modal extends React.Component {
 											type="text"
 											className="form-control"
 											id="usrname"
+											value={this.state.userName}
+											onChange={e => {
+												this.handleUserChange(e);
+											}}
 											placeholder="Username/email address"
 										/>
 									</div>
@@ -57,6 +78,10 @@ class Modal extends React.Component {
 										<label for="psw">PASSWORD</label>
 										<input
 											type="text"
+											value={this.state.password}
+											onChange={e => {
+												this.handlePasswordChange(e);
+											}}
 											className="form-control"
 											id="psw"
 											placeholder="Password"

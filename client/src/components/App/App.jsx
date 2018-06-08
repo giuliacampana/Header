@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
-import Wifi from "./Wifi.jsx";
-import Modal from "./Modal.jsx";
-import Coffee from "./Coffee.jsx";
-import Icons from "./Icons.jsx";
-import Carousel from "./Carousel.jsx";
+import Wifi from "../Wifi.jsx";
+import Modal from "../Modal.jsx";
+import Coffee from "../Coffee.jsx";
+import Icons from "../Icons.jsx";
+import Carousel from "../Carousel.jsx";
 
 class App extends React.Component {
 	constructor(props) {
@@ -17,7 +17,9 @@ class App extends React.Component {
 			name: "",
 			location: "",
 			city: "",
-			country: ""
+			country: "",
+			photos: [],
+			id: "",
 		};
 		this.getHostelInfo = this.getHostelInfo.bind(this);
 		this.getLocationInfo = this.getLocationInfo.bind(this);
@@ -31,7 +33,7 @@ class App extends React.Component {
 
 	getHostelInfo() {
 		axios
-			.get("/locations/hostels/hosetelId/pictures")
+			.get(`/api/locations/hostels/99-178-4713/info`)
 			.then(response => {
 				console.log(response.data[0]);
 				const features = response.data[0].features[0];
@@ -47,9 +49,9 @@ class App extends React.Component {
 					});
 				}
 				this.setState({
-					name: response.data[3].hostel_name,
-					location: response.data[3].street_name,
-					photos: response.data[3].photos
+					name: response.data[0].hostel_name,
+					location: response.data[0].street_name,
+					photos: response.data[0].photos
 				});
 			})
 			.catch(error => {
@@ -58,7 +60,7 @@ class App extends React.Component {
 	}
 
 	getLocationInfo() {
-		axios.get("/locations/hostels").then(response => {
+		axios.get("/api/locations/99/info").then(response => {
 			console.log(response.data[0]);
 			this.setState({
 				city: response.data[0].city,

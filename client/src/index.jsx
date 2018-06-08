@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/App.jsx";
+import App from "./components/App/App.jsx";
 
 const languages = [
 	"cesky",
@@ -212,3 +212,4 @@ ReactDOM.render(
 	<App languages={languages} currency={currency} guests={guests} />,
 	document.getElementById("app")
 );
+
