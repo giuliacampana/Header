@@ -1,80 +1,163 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import axios from "axios";
 
 class Search extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {};
+		this.state = {
+			location: "",
+			checkIn: "",
+			checkOut: "",
+			guests: "",
+			options: []
+		};
 	}
+
+	handleChangeLocation(e) {
+		this.setState({
+			location: e.target.value
+		});
+	}
+
+	handleChangeCheckIn(e) {
+		this.setState({
+			checkIn: e.target.value
+		});
+	}
+
+	handleChangeCheckOut(e) {
+		this.setState({
+			checkOut: e.target.value
+		});
+	}
+
+	chooseGuest(e) {
+		this.setState({
+			guests: e.target.value
+		});
+	}
+
+	getHostelOptions() {
+		axios
+			.get("/locations/hostels")
+			.then(response => {
+				const options = response.data.filter(
+					hostel => hostel.city === this.state.location
+				);
+				this.setState({
+					options: options
+				});
+
+				if (this.state.location === "" && options.length === 0) {
+					alert(
+						"I do not think you entered a city. Please try again"
+					);
+				} else if (options.length === 0) {
+					alert(
+						"Sorry there are no hostels in that location. Please enter another city!"
+					);
+				} else {
+					alert(
+						`There are ${
+							this.state.options.length
+						} location(s) for you to choose from!
+						${this.state.options.map(
+							(option, i) =>
+								`\n${i + 1}) ${option.city}, ${
+									option.country
+								}: ${
+									option.hostels.length
+								} hostel(s) available `
+						)}`
+					);
+				}
+			})
+			.catch(error => {
+				console.log(error);
+			});
+	}
+
+	// https://codepen.io/Rio517/pen/NPLbpP
 
 	render() {
 		return (
 			<div id="search">
 				<div id="searchDiv"> LOCATION </div>
-				<div
-					className="input-group add-on col-md-2 date datepicker"
-					data-date-format="yyyy-mm-dd"
-				>
-					<input
-						name="name"
-						value=""
-						type="text"
-						className="form-control date-picker"
-						data-date-format="yyyy-mm-dd"
-					/>
-					<div className="input-group-btn">
-						<button className="btn btn-default">
-							<i className="fa fa-compass" />
-						</button>
+				<form>
+					<div className="input-group">
+						<input
+							type="text"
+							className="form-control"
+							value={this.state.location}
+							onChange={e => this.handleChangeLocation(e)}
+							placeholder="Search hostels by city..."
+						/>
+						<div className="input-group-btn">
+							<button className="btn btn-default" type="submit">
+								<i className="fa fa-compass" />
+							</button>
+						</div>
 					</div>
-				</div>
+				</form>
 				<div id="searchDiv"> CHECK IN </div>
-				<div
-					className="input-group add-on col-md-2 date datepicker"
-					data-date-format="yyyy-mm-dd"
-				>
-					<input
-						name="name"
-						value=""
-						type="text"
-						className="form-control date-picker"
-						data-date-format="yyyy-mm-dd"
-					/>
-					<div className="input-group-btn">
-						<button className="btn btn-default">
-							<i className="fa fa-calendar" />
-						</button>
+				<form>
+					<div className="input-group">
+						<input
+							type="text"
+							value={this.state.checkIn}
+							onChange={e => this.handleChangeCheckIn(e)}
+							className="form-control"
+							placeholder={new Date().toDateString().substring(4)}
+						/>
+						<div className="input-group-btn">
+							<button className="btn btn-default" type="submit">
+								<i className="fa fa-calendar" />
+							</button>
+						</div>
 					</div>
-				</div>
+				</form>
 				<div id="searchDiv"> CHECK OUT </div>
-				<div
-					className="input-group add-on col-md-2 date datepicker"
-					data-date-format="yyyy-mm-dd"
-				>
-					<input
-						name="name"
-						value=""
-						type="text"
-						className="form-control date-picker"
-						data-date-format="yyyy-mm-dd"
-					/>
-					<div className="input-group-btn">
-						<button className="btn btn-default">
-							<i className="fa fa-calendar" />
-						</button>
+				<form>
+					<div className="input-group">
+						<input
+							type="text"
+							value={this.state.checkOut}
+							onChange={e => this.handleChangeCheckOut(e)}
+							className="form-control"
+							placeholder={new Date().toDateString().substring(4)}
+						/>
+						<div className="input-group-btn">
+							<button className="btn btn-default" type="submit">
+								<i className="fa fa-calendar" />
+							</button>
+						</div>
 					</div>
-				</div>
+				</form>
 				<div id="searchDiv">
 					{" "}
 
 					GUESTS<br />
-					<select>
+					<select
+						onChange={e => this.chooseGuest(e)}
+						value={this.state.guests}
+					>
 						{this.props.guests.map((guest, i) => {
-							return <option key={i}>{guest}</option>;
+							return (
+								<option value={guest} key={i}>
+									{guest}
+								</option>
+							);
 						})}
 					</select>
 				</div>
-				<button type="button" class="btn btn-search">
+				<button
+					onClick={() => {
+						this.getHostelOptions();
+					}}
+					type="button"
+					className="btn btn-search"
+				>
 					Search
 				</button>
 			</div>
