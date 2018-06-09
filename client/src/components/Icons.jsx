@@ -6,13 +6,10 @@ import NavBar from "./NavBar.jsx";
 class Icons extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {
-			search: false
-		};
+		this.state = {};
 
 		this.closeNav = this.closeNav.bind(this);
 		this.openNav = this.openNav.bind(this);
-		this.openSearch = this.openSearch.bind(this);
 	}
 
 	closeNav() {
@@ -21,12 +18,6 @@ class Icons extends React.Component {
 
 	openNav() {
 		document.getElementById("sideNav").style.width = "250px";
-	}
-
-	openSearch() {
-		this.setState(prevState => ({
-			search: !prevState.search
-		}));
 	}
 
 	render() {
@@ -52,16 +43,13 @@ class Icons extends React.Component {
 						/>
 						<i
 							onClick={() => {
-								this.openSearch();
+								this.props.openSearch();
 							}}
 							id="user"
 							className="fas fa-search fa-lg"
 						/>
 						<i
 							onClick={() => {
-								if (this.state.carousel) {
-									this.props.toggleCarousel();
-								}
 								this.openNav();
 							}}
 							id="user"
@@ -69,7 +57,7 @@ class Icons extends React.Component {
 						/>
 					</div>
 				</div>
-				{this.state.search ? (
+				{this.props.search ? (
 					<Search guests={this.props.guests} />
 				) : null}
 			</div>

@@ -7,12 +7,12 @@ import Coffee from "../Coffee.jsx";
 import Icons from "../Icons.jsx";
 import Carousel from "../Carousel.jsx";
 
-
 class App extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			carousel: false,
+			search: false,
 			wifi: false,
 			coffee: false,
 			name: "",
@@ -20,11 +20,12 @@ class App extends React.Component {
 			city: "",
 			country: "",
 			photos: [],
-			id: "",
+			id: ""
 		};
 		this.getHostelInfo = this.getHostelInfo.bind(this);
 		this.getLocationInfo = this.getLocationInfo.bind(this);
 		this.toggleCarousel = this.toggleCarousel.bind(this);
+		this.openSearch = this.openSearch.bind(this);
 	}
 
 	componentDidMount() {
@@ -69,16 +70,18 @@ class App extends React.Component {
 	}
 
 	toggleCarousel() {
+		if (this.state.search === false) {
+			this.setState(prevState => ({
+				carousel: !prevState.carousel
+			}));
+		}
+	}
+
+	openSearch() {
 		this.setState(prevState => ({
-			carousel: !prevState.carousel
+			search: !prevState.search
 		}));
 	}
-	// <div
-	// 	onClick={() => {
-	// 		this.toggleCarousel();
-	// 	}}
-	// 	id="showCarousel2"
-	// />
 
 	render() {
 		return (
@@ -87,13 +90,20 @@ class App extends React.Component {
 					languages={this.props.languages}
 					currency={this.props.currency}
 					guests={this.props.guests}
-					toggleCarousel={this.toggleCarousel}
+					search={this.state.search}
+					openSearch={this.openSearch}
 				/>
 				<div
 					onClick={() => {
 						this.toggleCarousel();
 					}}
 					id="showCarousel1"
+				/>
+				<div
+					onClick={() => {
+						this.toggleCarousel();
+					}}
+					id="showCarousel2"
 				/>
 				{this.state.wifi ? <Wifi /> : null}
 				{this.state.coffee ? <Coffee /> : null}
