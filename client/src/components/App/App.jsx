@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
+import styled from "styled-components";
 import Wifi from "../Wifi.jsx";
 import Modal from "../Modal.jsx";
 import Coffee from "../Coffee.jsx";

@@ -208,8 +208,12 @@ const guests = [
 	"80 Guests"
 ];
 
+// window.languages = languages;
+// window.currency = currency;
+// window.guests = guests;
+// window.App = Header;
+
 ReactDOM.render(
 	<App languages={languages} currency={currency} guests={guests} />,
-	document.getElementById("app")
+	document.getElementById("header")
 );
-
