@@ -1,5 +1,61 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import styled from "styled-components";
+
+const ModalBody = styled.div.attrs({
+	className: "modal-body"
+})`
+	color: black;
+`;
+
+const ModalTitle = styled.div.attrs({
+	className: "modal-title",
+	id: "exampleModalLabel"
+})`
+	color: black;
+	font-size: 20px;
+	position: absolute;
+	right: 50%;
+
+	a {
+		color: #ed7043;
+		font-size: 20px;
+	}
+`;
+
+const ModalDialog = styled.div.attrs({
+	className: "modal-dialog"
+})`
+	max-height: 300px;
+	max-width: 100%;
+	width: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) !important;
+`;
+
+const ModalFooter = styled.div.attrs({
+	className: "modal-footer"
+})`
+	a {
+		color: #ed7043;
+		position: absolute;
+		left: 50%;
+		bottom: 6%;
+		transform: translate(-50%, -50%) !important;
+	}
+
+	button {
+		background: #ed7043;
+		color: white;
+		width: 100px;
+		margin-left: 140px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-right: 10px;
+	}
+`;
 
 class Modal extends React.Component {
 	constructor(props) {
@@ -35,7 +91,7 @@ class Modal extends React.Component {
 					aria-labelledby="exampleModalLabel"
 					aria-hidden="true"
 				>
-					<div className="modal-dialog" role="document">
+					<ModalDialog role="document">
 						<div className="modal-content">
 							<div className="modal-header">
 								<button
@@ -46,17 +102,14 @@ class Modal extends React.Component {
 								>
 									<span aria-hidden="true">&times;</span>
 								</button>
-								<div
-									className="modal-title"
-									id="exampleModalLabel"
-								>
+								<ModalTitle>
 									Sign in or{" "}
 									<a href="https://tsecure.hostelworld.com/en/signup">
 										Sign up
 									</a>
-								</div>
+								</ModalTitle>
 							</div>
-							<div className="modal-body">
+							<ModalBody>
 								<form role="form">
 									<div className="form-group">
 										<label htmlFor="usrname">
@@ -88,8 +141,8 @@ class Modal extends React.Component {
 										/>
 									</div>
 								</form>
-							</div>
-							<div className="modal-footer">
+							</ModalBody>
+							<ModalFooter>
 								<a> Forgot password? </a>
 								<button
 									type="button"
@@ -97,9 +150,9 @@ class Modal extends React.Component {
 								>
 									Login
 								</button>
-							</div>
+							</ModalFooter>
 						</div>
-					</div>
+					</ModalDialog>
 				</div>
 			</div>
 		);

@@ -1,6 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import styled from "styled-components";
 import ReactTooltip from "react-tooltip";
+
+const Features2 = styled.div`
+	position: absolute;
+	bottom: 130px;
+	z-index: 4;
+	margin-bottom: 13px;
+	margin-left: 82px;
+	cursor: pointer;
+`;
+
+const Circle2 = styled.div`
+	position: absolute;
+	bottom: 130px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-left: 70px;
+	background: #3687ca;
+`;
 
 class Coffee extends React.Component {
 	constructor(props) {
@@ -11,15 +31,15 @@ class Coffee extends React.Component {
 	render() {
 		return (
 			<div>
-				<div className="features2">
+				<Features2>
 					<a data-tip data-for="coffee">
 						<i className="fas fa-coffee fa-lg" />
 					</a>
 					<ReactTooltip id="coffee" type="dark" effect="float">
 						<span>Free Breakfast</span>
 					</ReactTooltip>
-				</div>
-				<div className="circle2" />
+				</Features2>
+				<Circle2 />
 			</div>
 		);
 	}

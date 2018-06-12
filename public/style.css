@@ -1,0 +1,291 @@
+/*html,
+body,
+#header,
+#header > div {
+	height: 100%;
+}
+*/
+/*body {
+	font-family: "Noto Sans", sans-serif;
+	color: white;
+}*/
+
+/*@font-face {
+	font-family: woff;
+	src: url("./Gotham-Ultra.woff");
+}*/
+
+/*select {
+	width: 225px;
+	height: 30px;
+	margin-left: -5px;
+	margin-top: 7px;
+}*/
+
+/*#header {
+	transition: margin-right 0.5s;
+	padding: 20px;
+	background: url("./headerimg.png") no-repeat center center fixed;
+	background-size: cover;
+	height: 100%;
+	overflow: hidden;
+	z-index: -1;
+	cursor: pointer;
+}*/
+
+/*#searchContainer {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+*/
+/*#hostelLogo {
+	font-family: woff;
+	font-size: 40px;
+	cursor: pointer;
+	text-shadow: 2px 2px 4px #000000;
+}
+*/
+/*#hostelLogo a {
+	font-family: woff;
+	font-size: 40px;
+	cursor: pointer;
+	color: red;
+	text-shadow: 2px 2px 4px #000000;
+}*/
+
+/*#hostelName {
+	font-weight: bold;
+	font-family: woff;
+	font-size: 50px;
+	position: absolute;
+	bottom: 30px;
+	text-shadow: 2px 2px 4px #000000;
+	margin-top: 20px;
+}*/
+
+/*.features {
+	position: absolute;
+	bottom: 130px;
+	z-index: 4;
+	margin-bottom: 13px;
+	margin-left: 12px;
+	cursor: pointer;
+}*/
+
+/*.features2 {
+	position: absolute;
+	bottom: 130px;
+	z-index: 4;
+	margin-bottom: 13px;
+	margin-left: 82px;
+	cursor: pointer;
+}*/
+
+/*#user {
+	display: flex;
+	flex-direction: row;
+	margin: 10px;
+	padding: 5px;
+	cursor: pointer;
+	z-index: 1;
+}
+*/
+/*.circle {
+	position: absolute;
+	bottom: 130px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #3687ca;
+}
+*/
+/*.circle2 {
+	position: absolute;
+	bottom: 130px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-left: 70px;
+	background: #3687ca;
+}*/
+
+/*#location {
+	font-size: 12.8px;
+	position: absolute;
+	bottom: 10px;
+}
+*/
+/*#breadcrumbs {
+	font-size: 12.8px;
+	position: absolute;
+	bottom: 100px;
+}*/
+
+/*#sideNav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 7;
+	top: 0;
+	right: 0;
+	background-color: #262626;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+}
+
+#sideNav p {
+	padding: 0px 4px 4px 16px;
+	text-decoration: none;
+	font-size: 12px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+#sideNav a {
+	padding: 0px 4px 4px 16px;
+	text-decoration: none;
+	font-size: 12px;
+	color: #ed7043;
+	display: block;
+	transition: 0.3s;
+}*/
+/*
+#closeBtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+}*/
+
+/*#search {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 400px;
+	width: 350px;
+	background: white;
+	color: black;
+	float: right;
+	font-family: "Noto Sans", sans-serif;
+	box-shadow: 5px 10px 18px black;
+	font-size: 10px;
+	color: #757575;
+	z-index: 6;
+}*/
+
+/*#searchDiv {
+	padding: 2px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+*/
+/*.add-on .form-control:focus {
+	box-shadow: none;
+	border-color: #cccccc;
+}*/
+
+/*#search form {
+	width: auto;
+	margin-left: 12px;
+}
+
+#searchDiv select {
+	margin-left: 5px;
+	width: 300px;
+}*/
+
+/*.modal-body {
+	color: black;
+}*/
+
+/*.modal-title {
+	color: black;
+	font-size: 20px;
+}*/
+
+/*.modal-title a {
+	color: #ed7043;
+	font-size: 20px;
+}*/
+
+/*#exampleModalLabel {
+	position: absolute;
+	right: 50%;
+}*/
+
+/*.modal-dialog {
+	max-height: 300px;
+	max-width: 100%;
+	width: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) !important;
+}*/
+
+/*.modal-footer a {
+	color: #ed7043;
+	position: absolute;
+	left: 50%;
+	bottom: 6%;
+	transform: translate(-50%, -50%) !important;
+}*/
+
+/*.btn.btn-search {
+	background: #ed7043;
+	color: white;
+	width: 100px;
+	margin-left: 140px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+*/
+/*.carousel-inner {
+	height: 500px;
+	width: 500px;
+	margin: auto;
+	box-shadow: 5px 10px 18px black;
+}*/
+
+/*.carousel-control-prev {
+	margin-left: 250px;
+}
+
+.carousel-control-next {
+	margin-right: 250px;
+}*/
+
+/*#showCarousel1 {
+	position: absolute;
+	left: 0%;
+	height: 500px;
+	width: 300px;
+	z-index: 3;
+}
+
+#showCarousel2 {
+	position: absolute;
+	right: 0%;
+	height: 500px;
+	width: 250px;
+	z-index: 3;
+}*/
+
+/*.fas.fa-map-marker-alt {
+	padding-right: 5px;
+}
+*/
+/*.fas.fa-home.fa-sm {
+	padding-right: 5px;
+}
+
+.fas.fa-sign-in-alt.fa-sm {
+	padding-right: 5px;*/
+}
+
+/*.btn.btn-search {
+	margin-left: 15px;
+}*/
