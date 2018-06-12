@@ -1,6 +1,45 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import styled from "styled-components";
 import axios from "axios";
+
+const SearchBody = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 400px;
+	width: 350px;
+	background: white;
+	color: black;
+	float: right;
+	font-family: "Noto Sans", sans-serif;
+	box-shadow: 5px 10px 18px black;
+	font-size: 10px;
+	color: #757575;
+	z-index: 6;
+
+	form {
+		width: auto;
+		margin-left: 12px;
+	}
+`;
+
+const SearchDiv = styled.div`
+	padding: 2px;
+	margin-left: 10px;
+	margin-top: 10px;
+`;
+
+const Button = styled.button`
+	background: #ed7043;
+	color: white;
+	width: 100px;
+	margin-left: 140px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-left: 15px;
+`;
 
 class Search extends React.Component {
 	constructor(props) {
@@ -82,12 +121,10 @@ class Search extends React.Component {
 			});
 	}
 
-	// https://codepen.io/Rio517/pen/NPLbpP
-
 	render() {
 		return (
-			<div id="search">
-				<div id="searchDiv"> LOCATION </div>
+			<SearchBody>
+				<SearchDiv> LOCATION </SearchDiv>
 				<form>
 					<div className="input-group">
 						<input
@@ -104,7 +141,7 @@ class Search extends React.Component {
 						</div>
 					</div>
 				</form>
-				<div id="searchDiv"> CHECK IN </div>
+				<SearchDiv> CHECK IN </SearchDiv>
 				<form>
 					<div className="input-group">
 						<input
@@ -121,7 +158,7 @@ class Search extends React.Component {
 						</div>
 					</div>
 				</form>
-				<div id="searchDiv"> CHECK OUT </div>
+				<SearchDiv> CHECK OUT </SearchDiv>
 				<form>
 					<div className="input-group">
 						<input
@@ -138,10 +175,11 @@ class Search extends React.Component {
 						</div>
 					</div>
 				</form>
-				<div id="searchDiv">
+				<SearchDiv>
 					{" "}
 					GUESTS<br />
 					<select
+						style={{ width: "300px", marginLeft: "3px" }}
 						onChange={e => this.chooseGuest(e)}
 						value={this.state.guests}
 					>
@@ -153,8 +191,8 @@ class Search extends React.Component {
 							);
 						})}
 					</select>
-				</div>
-				<button
+				</SearchDiv>
+				<Button
 					onClick={() => {
 						this.getHostelOptions();
 					}}
@@ -162,8 +200,8 @@ class Search extends React.Component {
 					className="btn btn-search"
 				>
 					Search
-				</button>
-			</div>
+				</Button>
+			</SearchBody>
 		);
 	}
 }

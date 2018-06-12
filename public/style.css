@@ -1,28 +1,28 @@
-html,
+/*html,
 body,
 #header,
 #header > div {
 	height: 100%;
 }
-
-body {
+*/
+/*body {
 	font-family: "Noto Sans", sans-serif;
 	color: white;
-}
+}*/
 
-@font-face {
+/*@font-face {
 	font-family: woff;
 	src: url("./Gotham-Ultra.woff");
-}
+}*/
 
-select {
+/*select {
 	width: 225px;
 	height: 30px;
 	margin-left: -5px;
 	margin-top: 7px;
-}
+}*/
 
-#header {
+/*#header {
 	transition: margin-right 0.5s;
 	padding: 20px;
 	background: url("./headerimg.png") no-repeat center center fixed;
@@ -31,30 +31,30 @@ select {
 	overflow: hidden;
 	z-index: -1;
 	cursor: pointer;
-}
+}*/
 
-#searchContainer {
+/*#searchContainer {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
 }
-
-#hostelLogo {
+*/
+/*#hostelLogo {
 	font-family: woff;
 	font-size: 40px;
 	cursor: pointer;
 	text-shadow: 2px 2px 4px #000000;
 }
-
-#hostelLogo a {
+*/
+/*#hostelLogo a {
 	font-family: woff;
 	font-size: 40px;
 	cursor: pointer;
 	color: red;
 	text-shadow: 2px 2px 4px #000000;
-}
+}*/
 
-#hostelName {
+/*#hostelName {
 	font-weight: bold;
 	font-family: woff;
 	font-size: 50px;
@@ -62,27 +62,27 @@ select {
 	bottom: 30px;
 	text-shadow: 2px 2px 4px #000000;
 	margin-top: 20px;
-}
+}*/
 
-.features {
+/*.features {
 	position: absolute;
 	bottom: 130px;
 	z-index: 4;
 	margin-bottom: 13px;
 	margin-left: 12px;
 	cursor: pointer;
-}
+}*/
 
-.features2 {
+/*.features2 {
 	position: absolute;
 	bottom: 130px;
 	z-index: 4;
 	margin-bottom: 13px;
 	margin-left: 82px;
 	cursor: pointer;
-}
+}*/
 
-#user {
+/*#user {
 	display: flex;
 	flex-direction: row;
 	margin: 10px;
@@ -90,8 +90,8 @@ select {
 	cursor: pointer;
 	z-index: 1;
 }
-
-.circle {
+*/
+/*.circle {
 	position: absolute;
 	bottom: 130px;
 	width: 50px;
@@ -99,8 +99,8 @@ select {
 	border-radius: 50%;
 	background: #3687ca;
 }
-
-.circle2 {
+*/
+/*.circle2 {
 	position: absolute;
 	bottom: 130px;
 	width: 50px;
@@ -108,21 +108,21 @@ select {
 	border-radius: 50%;
 	margin-left: 70px;
 	background: #3687ca;
-}
+}*/
 
-#location {
+/*#location {
 	font-size: 12.8px;
 	position: absolute;
 	bottom: 10px;
 }
-
-#breadcrumbs {
+*/
+/*#breadcrumbs {
 	font-size: 12.8px;
 	position: absolute;
 	bottom: 100px;
-}
+}*/
 
-#sideNav {
+/*#sideNav {
 	height: 100%;
 	width: 0;
 	position: fixed;
@@ -151,15 +151,15 @@ select {
 	color: #ed7043;
 	display: block;
 	transition: 0.3s;
-}
-
+}*/
+/*
 #closeBtn {
 	position: absolute;
 	top: 0;
 	right: 25px;
-}
+}*/
 
-#search {
+/*#search {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -173,20 +173,20 @@ select {
 	font-size: 10px;
 	color: #757575;
 	z-index: 6;
-}
+}*/
 
-#searchDiv {
+/*#searchDiv {
 	padding: 2px;
 	margin-left: 10px;
 	margin-top: 10px;
 }
-
-.add-on .form-control:focus {
+*/
+/*.add-on .form-control:focus {
 	box-shadow: none;
 	border-color: #cccccc;
-}
+}*/
 
-#search form {
+/*#search form {
 	width: auto;
 	margin-left: 12px;
 }
@@ -194,28 +194,28 @@ select {
 #searchDiv select {
 	margin-left: 5px;
 	width: 300px;
-}
+}*/
 
-.modal-body {
+/*.modal-body {
 	color: black;
-}
+}*/
 
-.modal-title {
+/*.modal-title {
 	color: black;
 	font-size: 20px;
-}
+}*/
 
-.modal-title a {
+/*.modal-title a {
 	color: #ed7043;
 	font-size: 20px;
-}
+}*/
 
-#exampleModalLabel {
+/*#exampleModalLabel {
 	position: absolute;
 	right: 50%;
-}
+}*/
 
-.modal-dialog {
+/*.modal-dialog {
 	max-height: 300px;
 	max-width: 100%;
 	width: 400px;
@@ -223,17 +223,17 @@ select {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%) !important;
-}
+}*/
 
-.modal-footer a {
+/*.modal-footer a {
 	color: #ed7043;
 	position: absolute;
 	left: 50%;
 	bottom: 6%;
 	transform: translate(-50%, -50%) !important;
-}
+}*/
 
-.btn.btn-search {
+/*.btn.btn-search {
 	background: #ed7043;
 	color: white;
 	width: 100px;
@@ -242,23 +242,23 @@ select {
 	margin-bottom: 10px;
 	margin-right: 10px;
 }
-
-.carousel-inner {
+*/
+/*.carousel-inner {
 	height: 500px;
 	width: 500px;
 	margin: auto;
 	box-shadow: 5px 10px 18px black;
-}
+}*/
 
-.carousel-control-prev {
+/*.carousel-control-prev {
 	margin-left: 250px;
 }
 
 .carousel-control-next {
 	margin-right: 250px;
-}
+}*/
 
-#showCarousel1 {
+/*#showCarousel1 {
 	position: absolute;
 	left: 0%;
 	height: 500px;
@@ -272,20 +272,20 @@ select {
 	height: 500px;
 	width: 250px;
 	z-index: 3;
-}
+}*/
 
-.fas.fa-map-marker-alt {
+/*.fas.fa-map-marker-alt {
 	padding-right: 5px;
 }
-
-.fas.fa-home.fa-sm {
+*/
+/*.fas.fa-home.fa-sm {
 	padding-right: 5px;
 }
 
 .fas.fa-sign-in-alt.fa-sm {
-	padding-right: 5px;
+	padding-right: 5px;*/
 }
 
-.btn.btn-search {
+/*.btn.btn-search {
 	margin-left: 15px;
-}
+}*/

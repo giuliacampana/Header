@@ -1,7 +1,38 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import styled from "styled-components";
 import Search from "./Search.jsx";
 import NavBar from "./NavBar.jsx";
+
+const SearchContainer = styled.div`
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+`;
+
+const HostelLogo = styled.div`
+	font-family: woff;
+	font-size: 40px;
+	cursor: pointer;
+	text-shadow: 2px 2px 4px #000000;
+
+	a {
+		font-family: woff;
+		font-size: 40px;
+		cursor: pointer;
+		color: red;
+		text-shadow: 2px 2px 4px #000000;
+	}
+`;
+
+const User = styled.i`
+	display: flex;
+	flex-direction: row;
+	margin: 10px;
+	padding: 5px;
+	cursor: pointer;
+	z-index: 1;
+`;
 
 class Icons extends React.Component {
 	constructor(props) {
@@ -28,35 +59,35 @@ class Icons extends React.Component {
 					currency={this.props.currency}
 					closeNav={this.closeNav}
 				/>
-				<div id="searchContainer">
-					<div id="hostelLogo">
+				<SearchContainer>
+					<HostelLogo>
 						RU<a href="https://www.hostelworld.com/">
 							inn<i className="fas fa-home fa-sm" />
 						</a>{" "}
-					</div>
-					<div id="searchContainer">
-						<i
+					</HostelLogo>
+					<SearchContainer>
+						<User
 							data-toggle="modal"
 							data-target="#exampleModal"
 							id="user"
 							className="fas fa-user fa-lg"
 						/>
-						<i
+						<User
 							onClick={() => {
 								this.props.openSearch();
 							}}
 							id="user"
 							className="fas fa-search fa-lg"
 						/>
-						<i
+						<User
 							onClick={() => {
 								this.openNav();
 							}}
 							id="user"
 							className="fas fa-bars fa-lg"
 						/>
-					</div>
-				</div>
+					</SearchContainer>
+				</SearchContainer>
 				{this.props.search ? (
 					<Search guests={this.props.guests} />
 				) : null}
