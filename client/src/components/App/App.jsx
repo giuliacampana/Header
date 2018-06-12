@@ -8,7 +8,7 @@ import Coffee from "../Coffee.jsx";
 import Icons from "../Icons.jsx";
 import Carousel from "../Carousel.jsx";
 
-const Body = styled.body`
+const Body = styled.div`
 	font-family: "Noto Sans", sans-serif;
 	color: white;
 	transition: margin-right 0.5s;
@@ -37,7 +37,7 @@ const ShowCarousel1 = styled.div`
 	position: absolute;
 	left: 0%;
 	height: 500px;
-	width: 300px;
+	width: 1000px;
 	z-index: 3;
 `;
 
@@ -78,7 +78,6 @@ class App extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			carousel: false,
 			search: false,
 			wifi: false,
 			coffee: false,
@@ -91,7 +90,6 @@ class App extends React.Component {
 		};
 		this.getHostelInfo = this.getHostelInfo.bind(this);
 		this.getLocationInfo = this.getLocationInfo.bind(this);
-		this.toggleCarousel = this.toggleCarousel.bind(this);
 		this.openSearch = this.openSearch.bind(this);
 	}
 
@@ -102,7 +100,7 @@ class App extends React.Component {
 
 	getHostelInfo() {
 		axios
-			.get(`/api/locations/hostels/99-178-4713/info`)
+			.get(`http://localhost:3001/api/locations/hostels/99-178-4713/info`)
 			.then(response => {
 				const features = response.data[0].features[0];
 				if (features.wifi) {
@@ -128,20 +126,14 @@ class App extends React.Component {
 	}
 
 	getLocationInfo() {
-		axios.get("/api/locations/99/info").then(response => {
-			this.setState({
-				city: response.data[0].city,
-				country: response.data[0].country
+		axios
+			.get("http://localhost:3001/api/locations/99/info")
+			.then(response => {
+				this.setState({
+					city: response.data[0].city,
+					country: response.data[0].country
+				});
 			});
-		});
-	}
-
-	toggleCarousel() {
-		if (this.state.search === false) {
-			this.setState(prevState => ({
-				carousel: !prevState.carousel
-			}));
-		}
 	}
 
 	openSearch() {
@@ -162,14 +154,12 @@ class App extends React.Component {
 						openSearch={this.openSearch}
 					/>
 					<ShowCarousel1
-						onClick={() => {
-							this.toggleCarousel();
-						}}
+						data-toggle="modal"
+						data-target="#exampleModal2"
 					/>
 					<ShowCarousel2
-						onClick={() => {
-							this.toggleCarousel();
-						}}
+						data-toggle="modal"
+						data-target="#exampleModal2"
 					/>
 					{this.state.wifi ? <Wifi /> : null}
 					{this.state.coffee ? <Coffee /> : null}
@@ -184,12 +174,11 @@ class App extends React.Component {
 						{this.state.country}
 					</Location>
 					<Modal />
-					{this.state.carousel ? (
-						<Carousel
-							photos={this.state.photos}
-							closeCarousel={this.toggleCarousel}
-						/>
-					) : null}
+
+					<Carousel
+						photos={this.state.photos}
+						closeCarousel={this.toggleCarousel}
+					/>
 				</div>
 			</Body>
 		);

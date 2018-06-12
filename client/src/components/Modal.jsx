@@ -78,8 +78,6 @@ class Modal extends React.Component {
 		});
 	}
 
-	//make a function to make a new user in user table when you click on login
-
 	render() {
 		return (
 			<div>
