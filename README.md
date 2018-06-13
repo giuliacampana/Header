@@ -23,8 +23,6 @@
 
 > Run the following comman in your terminal to start server
 
-    NOTE: if you want to seed databse, uncomment db/db.js then run following command. Then, comment it out again.
-
     "npm start"
 
 > Insert following into your brower to open

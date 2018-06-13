@@ -5,21 +5,34 @@ import styled from "styled-components";
 const CarouselInner = styled.div.attrs({
 	className: "carousel-inner"
 })`
-	height: 300px;
-	width: 300px;
+	height: 500px;
+	width: 500px;
 	margin-right: 75px;
+`;
+
+const ModalContent = styled.a.attrs({
+	className: "modal-content"
+})`
+	background-color: transparent;
+	border: none;
+`;
+
+const ModalHeader = styled.a.attrs({
+	className: "modal-header"
+})`
+	border-bottom: none;
 `;
 
 const CarouselControlPrev = styled.a.attrs({
 	className: "carousel-control-prev"
 })`
-	margin-right: 75px;
+	margin-right: 150px;
 `;
 
 const CarouselControlNext = styled.a.attrs({
 	className: "carousel-control-next"
 })`
-	margin-right: 75px;
+	margin-right: 50px;
 `;
 
 class Carousel extends React.Component {
@@ -39,18 +52,14 @@ class Carousel extends React.Component {
 				aria-hidden="true"
 			>
 				<div className="modal-dialog" role="document">
-					<div className="modal-content">
-						<div className="modal-header">
+					<ModalContent>
+						<ModalHeader>
 							<button
 								type="button"
 								className="close"
 								data-dismiss="modal"
 								aria-label="Close"
 							/>
-							<span aria-hidden="true">
-								{" "}
-								Close Button &times;
-							</span>
 							<div
 								id="carouselExampleControls"
 								className="carousel slide"
@@ -108,8 +117,8 @@ class Carousel extends React.Component {
 									<span className="sr-only">Next</span>
 								</CarouselControlNext>
 							</div>
-						</div>
-					</div>
+						</ModalHeader>
+					</ModalContent>
 				</div>
 			</div>
 		);
