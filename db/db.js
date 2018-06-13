@@ -1,3 +1,4 @@
+const axios = require("axios");
 const mockLocationsData = require("./mockLocationsData.json");
 const mockHostelData = require("./mockHostelData.json");
 
@@ -20,21 +21,40 @@ const hostelSchema = mongoose.Schema({
 
 const Hostel = mongoose.model("Hostel", hostelSchema);
 
-// for (let i = 0; i < mockHostelData.length; i += 1) {
-// 	const currentHostel = mockHostelData[i];
-// 	const newHostel = new Hostel({
-// 		id: currentHostel.id,
-// 		location_id: currentHostel.location_id,
-// 		hostel_name: currentHostel.hostel_name,
-// 		street_name: currentHostel.street_name,
-// 		features: currentHostel.features,
-// 		photos: currentHostel.photos
-// 	});
+// const makeHostel = container => {
+// 	for (let i = 0; i < mockHostelData.length; i += 1) {
+// 		const currentHostel = mockHostelData[i];
+// 		const newHostel = new Hostel({
+// 			id: currentHostel.id,
+// 			location_id: currentHostel.location_id,
+// 			hostel_name: currentHostel.hostel_name,
+// 			street_name: currentHostel.street_name,
+// 			features: currentHostel.features,
+// 			photos: container
+// 		});
 
-// 	newHostel.save((err, product) => {
-// 		if (err) throw err;
-// 	});
-// }
+// 		newHostel.save((err, product) => {
+// 			if (err) throw err;
+// 		});
+// 	}
+// };
+
+// const getAPIPhotos = () => {
+// 	axios
+// 		.get(
+// 			"https://api.unsplash.com/search/photos?per_page=30&query=travel&client_id=54008d4032d0467ec44b27e6e2ab76efbf4e6b8a449cd18ea4bf29ca9946620c"
+// 		)
+// 		.then(response => {
+// 			const res = response.data.results.splice(1, 6);
+// 			const container = [];
+// 			res.forEach(photo => {
+// 				container.push(photo.urls.regular);
+// 			});
+// 			makeHostel(container);
+// 		});
+// };
+
+// getAPIPhotos();
 
 const locationSchema = mongoose.Schema({
 	id: Number,
