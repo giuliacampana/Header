@@ -97,5 +97,6 @@ Location.count((error, count) => {
 	}
 });
 
+
 module.exports.Hostel = Hostel;
 module.exports.Location = Location;
