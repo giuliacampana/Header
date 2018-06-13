@@ -13,7 +13,7 @@ const Body = styled.div`
 	color: white;
 	transition: margin-right 0.5s;
 	padding: 20px;
-	background: url("./headerimg.png") no-repeat center center fixed;
+	background: url(${props => props.photo.url}) no-repeat center center fixed;
 	background-size: cover;
 	height: 100%;
 	overflow: hidden;
@@ -37,7 +37,7 @@ const ShowCarousel1 = styled.div`
 	position: absolute;
 	left: 0%;
 	height: 500px;
-	width: 1000px;
+	width: 65%;
 	z-index: 3;
 `;
 
@@ -45,14 +45,14 @@ const ShowCarousel2 = styled.div`
 	position: absolute;
 	right: 0%;
 	height: 500px;
-	width: 250px;
+	width: 20%;
 	z-index: 3;
 `;
 
 const Breadcrumbs = styled.div`
 	font-size: 12.8px;
 	position: absolute;
-	bottom: 100px;
+	bottom: 18%;
 `;
 
 const HostelName = styled.div`
@@ -60,7 +60,7 @@ const HostelName = styled.div`
 	font-family: woff;
 	font-size: 50px;
 	position: absolute;
-	bottom: 30px;
+	bottom: 7%;
 	text-shadow: 2px 2px 4px #000000;
 	margin-top: 20px;
 `;
@@ -68,7 +68,7 @@ const HostelName = styled.div`
 const Location = styled.div`
 	font-size: 12.8px;
 	position: absolute;
-	bottom: 10px;
+	bottom: 5%;
 `;
 const Marker = styled.i`
 	padding-right: 5px;
@@ -144,43 +144,47 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<Body>
-				<div>
-					<Icons
-						languages={this.props.languages}
-						currency={this.props.currency}
-						guests={this.props.guests}
-						search={this.state.search}
-						openSearch={this.openSearch}
-					/>
-					<ShowCarousel1
-						data-toggle="modal"
-						data-target="#exampleModal2"
-					/>
-					<ShowCarousel2
-						data-toggle="modal"
-						data-target="#exampleModal2"
-					/>
-					{this.state.wifi ? <Wifi /> : null}
-					{this.state.coffee ? <Coffee /> : null}
-					<Breadcrumbs>
-						{" "}
-						Home / {this.state.country} / {this.state.city}
-					</Breadcrumbs>
-					<HostelName> {this.state.name} </HostelName>
-					<Location>
-						<Marker className="fas fa-map-marker-alt" />
-						{this.state.location}, {this.state.city},{" "}
-						{this.state.country}
-					</Location>
-					<Modal />
+			<div>
+				{this.state.photos.length > 0 && (
+					<Body photo={this.state.photos[0]}>
+						<div>
+							<Icons
+								languages={this.props.languages}
+								currency={this.props.currency}
+								guests={this.props.guests}
+								search={this.state.search}
+								openSearch={this.openSearch}
+							/>
+							<ShowCarousel1
+								data-toggle="modal"
+								data-target="#exampleModal2"
+							/>
+							<ShowCarousel2
+								data-toggle="modal"
+								data-target="#exampleModal2"
+							/>
+							{this.state.wifi ? <Wifi /> : null}
+							{this.state.coffee ? <Coffee /> : null}
+							<Breadcrumbs>
+								{" "}
+								Home / {this.state.country} / {this.state.city}
+							</Breadcrumbs>
+							<HostelName> {this.state.name} </HostelName>
+							<Location>
+								<Marker className="fas fa-map-marker-alt" />
+								{this.state.location}, {this.state.city},{" "}
+								{this.state.country}
+							</Location>
+							<Modal />
 
-					<Carousel
-						photos={this.state.photos}
-						closeCarousel={this.toggleCarousel}
-					/>
-				</div>
-			</Body>
+							<Carousel
+								photos={this.state.photos}
+								closeCarousel={this.toggleCarousel}
+							/>
+						</div>
+					</Body>
+				)}
+			</div>
 		);
 	}
 }

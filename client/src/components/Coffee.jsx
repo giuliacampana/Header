@@ -5,7 +5,7 @@ import ReactTooltip from "react-tooltip";
 
 const Features2 = styled.div`
 	position: absolute;
-	bottom: 130px;
+	bottom: 23%;
 	z-index: 4;
 	margin-bottom: 13px;
 	margin-left: 82px;
@@ -14,7 +14,7 @@ const Features2 = styled.div`
 
 const Circle2 = styled.div`
 	position: absolute;
-	bottom: 130px;
+	bottom: 23%;
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
