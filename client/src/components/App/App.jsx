@@ -13,7 +13,7 @@ const Body = styled.div`
 	color: white;
 	transition: margin-right 0.5s;
 	padding: 20px;
-	background: url(${props => props.photo.url}) no-repeat center center fixed;
+	background: url(${props => props.photo}) no-repeat center center fixed;
 	background-size: cover;
 	height: 100%;
 	overflow: hidden;

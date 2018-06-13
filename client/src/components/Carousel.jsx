@@ -66,7 +66,7 @@ class Carousel extends React.Component {
 												>
 													<img
 														className="d-block w-100"
-														src={photo.url}
+														src={photo}
 													/>
 												</div>
 											);
@@ -78,7 +78,7 @@ class Carousel extends React.Component {
 												>
 													<img
 														className="d-block w-100"
-														src={photo.url}
+														src={photo}
 													/>
 												</div>
 											);
