@@ -81,5 +81,6 @@ const Location = mongoose.model("Location", locationSchema);
 // 	});
 // }
 
+
 module.exports.Hostel = Hostel;
 module.exports.Location = Location;

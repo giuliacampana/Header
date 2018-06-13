@@ -81,13 +81,9 @@ class Search extends React.Component {
 		axios
 			.get("/locations/hostels")
 			.then(response => {
-				const options = [];
-				console.log("get hostel options", response.data);
-				for (let i = 0; i < response.data.length; i += 1) {
-					if (response.data[i].city === this.state.location) {
-						options.push(response.data[i]);
-					}
-				}
+				const options = response.data.filter(
+					hostel => hostel.city === this.state.location
+				);
 				this.setState({
 					options: options
 				});
@@ -177,6 +173,7 @@ class Search extends React.Component {
 				</form>
 				<SearchDiv>
 					{" "}
+
 					GUESTS<br />
 					<select
 						style={{ width: "300px", marginLeft: "3px" }}
