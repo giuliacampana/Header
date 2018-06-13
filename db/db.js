@@ -21,40 +21,46 @@ const hostelSchema = mongoose.Schema({
 
 const Hostel = mongoose.model("Hostel", hostelSchema);
 
-// const makeHostel = container => {
-// 	for (let i = 0; i < mockHostelData.length; i += 1) {
-// 		const currentHostel = mockHostelData[i];
-// 		const newHostel = new Hostel({
-// 			id: currentHostel.id,
-// 			location_id: currentHostel.location_id,
-// 			hostel_name: currentHostel.hostel_name,
-// 			street_name: currentHostel.street_name,
-// 			features: currentHostel.features,
-// 			photos: container
-// 		});
+const makeHostel = container => {
+	for (let i = 0; i < mockHostelData.length; i += 1) {
+		const currentHostel = mockHostelData[i];
+		const newHostel = new Hostel({
+			id: currentHostel.id,
+			location_id: currentHostel.location_id,
+			hostel_name: currentHostel.hostel_name,
+			street_name: currentHostel.street_name,
+			features: currentHostel.features,
+			photos: container
+		});
 
-// 		newHostel.save((err, product) => {
-// 			if (err) throw err;
-// 		});
-// 	}
-// };
+		newHostel.save((err, product) => {
+			if (err) throw err;
+		});
+	}
+};
 
-// const getAPIPhotos = () => {
-// 	axios
-// 		.get(
-// 			"https://api.unsplash.com/search/photos?per_page=30&query=travel&client_id=54008d4032d0467ec44b27e6e2ab76efbf4e6b8a449cd18ea4bf29ca9946620c"
-// 		)
-// 		.then(response => {
-// 			const res = response.data.results.splice(1, 6);
-// 			const container = [];
-// 			res.forEach(photo => {
-// 				container.push(photo.urls.regular);
-// 			});
-// 			makeHostel(container);
-// 		});
-// };
+const getAPIPhotos = () => {
+	axios
+		.get(
+			"https://api.unsplash.com/search/photos?per_page=30&query=travel&client_id=54008d4032d0467ec44b27e6e2ab76efbf4e6b8a449cd18ea4bf29ca9946620c"
+		)
+		.then(response => {
+			const res = response.data.results.splice(1, 6);
+			const container = [];
+			res.forEach(photo => {
+				container.push(photo.urls.regular);
+			});
+			makeHostel(container);
+		});
+};
 
-// getAPIPhotos();
+Hostel.count((error, count) => {
+	if (count === 0) {
+		getAPIPhotos();
+	} else {
+		console.log("your database has your hostels collection");
+	}
+});
 
 const locationSchema = mongoose.Schema({
 	id: Number,
@@ -66,20 +72,30 @@ const locationSchema = mongoose.Schema({
 
 const Location = mongoose.model("Location", locationSchema);
 
-// for (let i = 0; i < mockLocationsData.length; i += 1) {
-// 	const current = mockLocationsData[i];
-// 	const newLocation = new Location({
-// 		id: current.id,
-// 		city: current.city,
-// 		country: current.country,
-// 		country_code: current.country_code,
-// 		hostels: current.hostels
-// 	});
+const makeLocation = () => {
+	for (let i = 0; i < mockLocationsData.length; i += 1) {
+		const current = mockLocationsData[i];
+		const newLocation = new Location({
+			id: current.id,
+			city: current.city,
+			country: current.country,
+			country_code: current.country_code,
+			hostels: current.hostels
+		});
 
-// 	newLocation.save((err, product) => {
-// 		if (err) throw err;
-// 	});
-// }
+		newLocation.save((err, product) => {
+			if (err) throw err;
+		});
+	}
+};
+
+Location.count((error, count) => {
+	if (count === 0) {
+		makeLocation();
+	} else {
+		console.log("your database has locations collection");
+	}
+});
 
 
 module.exports.Hostel = Hostel;
