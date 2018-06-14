@@ -142,7 +142,7 @@ class Header extends React.Component {
 			<div>
 				{this.state.photos.length > 0 && (
 					<Body photo={this.state.photos[0]}>
-						<div>
+						<div className="container">
 							<Icons
 								languages={this.props.languages}
 								currency={this.props.currency}
