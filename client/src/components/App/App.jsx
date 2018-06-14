@@ -15,10 +15,11 @@ const Body = styled.div`
 	padding: 20px;
 	background: url(${props => props.photo}) no-repeat center center fixed;
 	background-size: cover;
-	height: 100%;
 	overflow: hidden;
 	z-index: -1;
 	cursor: pointer;
+	min-height: 256px;
+	position: relative;
 
 	@font-face {
 		font-family: woff;
@@ -36,7 +37,7 @@ const Body = styled.div`
 const ShowCarousel1 = styled.div`
 	position: absolute;
 	left: 0%;
-	height: 500px;
+	height: 200px;
 	width: 65%;
 	z-index: 3;
 `;
@@ -44,32 +45,26 @@ const ShowCarousel1 = styled.div`
 const ShowCarousel2 = styled.div`
 	position: absolute;
 	right: 0%;
-	height: 500px;
+	height: 200px;
 	width: 20%;
 	z-index: 3;
 `;
 
 const Breadcrumbs = styled.div`
 	font-size: 12.8px;
-	position: absolute;
-	bottom: 18%;
 `;
 
 const HostelName = styled.div`
 	font-weight: bold;
 	font-family: woff;
-	font-size: 50px;
-	position: absolute;
-	bottom: 7%;
+	font-size: 35.2px;
 	text-shadow: 2px 2px 4px #000000;
-	margin-top: 20px;
 `;
 
 const Location = styled.div`
-	font-size: 12.8px;
-	position: absolute;
-	bottom: 5%;
+	font-size: 11.2px;
 `;
+
 const Marker = styled.i`
 	padding-right: 5px;
 `;
@@ -163,18 +158,28 @@ class App extends React.Component {
 								data-toggle="modal"
 								data-target="#exampleModal2"
 							/>
-							{this.state.wifi ? <Wifi /> : null}
-							{this.state.coffee ? <Coffee /> : null}
-							<Breadcrumbs>
-								{" "}
-								Home / {this.state.country} / {this.state.city}
-							</Breadcrumbs>
-							<HostelName> {this.state.name} </HostelName>
-							<Location>
-								<Marker className="fas fa-map-marker-alt" />
-								{this.state.location}, {this.state.city},{" "}
-								{this.state.country}
-							</Location>
+							<div style={{ marginTop: "50px" }}>
+								<div
+									style={{
+										display: "flex",
+										marginBottom: "10px"
+									}}
+								>
+									{this.state.wifi ? <Wifi /> : null}
+									{this.state.coffee ? <Coffee /> : null}
+								</div>
+								<Breadcrumbs>
+									{" "}
+									Home / {this.state.country} /{" "}
+									{this.state.city}
+								</Breadcrumbs>
+								<HostelName> {this.state.name} </HostelName>
+								<Location>
+									<Marker className="fas fa-map-marker-alt" />
+									{this.state.location}, {this.state.city},{" "}
+									{this.state.country}
+								</Location>
+							</div>
 							<Modal />
 
 							<Carousel
