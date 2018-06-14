@@ -3,8 +3,8 @@ import ReactDOM from "react-dom";
 import styled from "styled-components";
 import ReactTooltip from "react-tooltip";
 
-const Features = styled.div.attrs({
-	className: "btn btn-primary"
+const WifiFeature = styled.div.attrs({
+	className: "btn btn-search"
 })`
 	border-radius: 50%;
 	cursor: pointer;
@@ -12,6 +12,7 @@ const Features = styled.div.attrs({
 	height: 50px;
 	width: 50px;
 	padding: 12px 0px;
+	margin-right: 10px;
 `;
 
 class Wifi extends React.Component {
@@ -23,14 +24,14 @@ class Wifi extends React.Component {
 	render() {
 		return (
 			<div>
-				<Features>
+				<WifiFeature>
 					<a data-tip data-for="wifi">
 						<i className="fas fa-wifi fa-lg" />
 					</a>
 					<ReactTooltip id="wifi" type="dark" effect="float">
 						<span>Free Wifi</span>
 					</ReactTooltip>
-				</Features>
+				</WifiFeature>
 			</div>
 		);
 	}
