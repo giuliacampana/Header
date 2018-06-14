@@ -3,22 +3,16 @@ import ReactDOM from "react-dom";
 import styled from "styled-components";
 import ReactTooltip from "react-tooltip";
 
-const Features = styled.div`
-	position: absolute;
-	bottom: 23%;
+const Features = styled.div.attrs({
+	className: "btn btn-primary"
+})`
 	z-index: 4;
-	margin-bottom: 13px;
-	margin-left: 12px;
+	border-radius: 50%
 	cursor: pointer;
-`;
-
-const Circle = styled.div`
-	position: absolute;
-	bottom: 23%;
-	width: 50px;
+	background: #3687ca
 	height: 50px;
-	border-radius: 50%;
-	background: #3687ca;
+	width: 50px;
+	padding: 12px 0px;
 `;
 
 class Wifi extends React.Component {
@@ -38,7 +32,6 @@ class Wifi extends React.Component {
 						<span>Free Wifi</span>
 					</ReactTooltip>
 				</Features>
-				<Circle />
 			</div>
 		);
 	}

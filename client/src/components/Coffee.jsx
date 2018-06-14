@@ -3,23 +3,16 @@ import ReactDOM from "react-dom";
 import styled from "styled-components";
 import ReactTooltip from "react-tooltip";
 
-const Features2 = styled.div`
-	position: absolute;
-	bottom: 23%;
+const Features2 = styled.div.attrs({
+	className: "btn btn-primary"
+})`
 	z-index: 4;
-	margin-bottom: 13px;
-	margin-left: 82px;
+	border-radius: 50%
 	cursor: pointer;
-`;
-
-const Circle2 = styled.div`
-	position: absolute;
-	bottom: 23%;
-	width: 50px;
+	background: #3687ca
 	height: 50px;
-	border-radius: 50%;
-	margin-left: 70px;
-	background: #3687ca;
+	width: 50px;
+	padding: 12px 0px;
 `;
 
 class Coffee extends React.Component {
@@ -30,7 +23,7 @@ class Coffee extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div style={{ padding: "0px 10px" }}>
 				<Features2>
 					<a data-tip data-for="coffee">
 						<i className="fas fa-coffee fa-lg" />
@@ -39,7 +32,6 @@ class Coffee extends React.Component {
 						<span>Free Breakfast</span>
 					</ReactTooltip>
 				</Features2>
-				<Circle2 />
 			</div>
 		);
 	}
