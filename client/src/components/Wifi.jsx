@@ -6,10 +6,9 @@ import ReactTooltip from "react-tooltip";
 const Features = styled.div.attrs({
 	className: "btn btn-primary"
 })`
-	z-index: 4;
-	border-radius: 50%
+	border-radius: 50%;
 	cursor: pointer;
-	background: #3687ca
+	background: #3687ca;
 	height: 50px;
 	width: 50px;
 	padding: 12px 0px;
