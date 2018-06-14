@@ -6,7 +6,7 @@ import ReactTooltip from "react-tooltip";
 const Features2 = styled.div.attrs({
 	className: "btn btn-primary"
 })`
-	z-index: 4;
+	
 	border-radius: 50%
 	cursor: pointer;
 	background: #3687ca
@@ -23,7 +23,7 @@ class Coffee extends React.Component {
 
 	render() {
 		return (
-			<div style={{ padding: "0px 10px" }}>
+			<div style={{ padding: "0px 20px" }}>
 				<Features2>
 					<a data-tip data-for="coffee">
 						<i className="fas fa-coffee fa-lg" />

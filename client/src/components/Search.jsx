@@ -16,6 +16,8 @@ const SearchBody = styled.div`
 	box-shadow: 5px 10px 18px black;
 	font-size: 10px;
 	color: #757575;
+	position: fixed;
+	margin-left: 500px;
 	z-index: 6;
 
 	form {
@@ -173,7 +175,6 @@ class Search extends React.Component {
 				</form>
 				<SearchDiv>
 					{" "}
-
 					GUESTS<br />
 					<select
 						style={{ width: "300px", marginLeft: "3px" }}

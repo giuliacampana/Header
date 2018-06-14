@@ -73,8 +73,8 @@ class Icons extends React.Component {
 							className="fas fa-user fa-lg"
 						/>
 						<User
-							onClick={() => {
-								this.props.openSearch();
+							onClick={e => {
+								this.props.openSearch(e);
 							}}
 							id="user"
 							className="fas fa-search fa-lg"

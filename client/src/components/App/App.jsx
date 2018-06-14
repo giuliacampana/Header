@@ -16,9 +16,8 @@ const Body = styled.div`
 	background: url(${props => props.photo}) no-repeat center center fixed;
 	background-size: cover;
 	overflow: hidden;
-	z-index: -1;
 	cursor: pointer;
-	min-height: 256px;
+	min-height: 400px;
 	position: relative;
 
 	@font-face {
@@ -37,7 +36,7 @@ const Body = styled.div`
 const ShowCarousel1 = styled.div`
 	position: absolute;
 	left: 0%;
-	height: 200px;
+	height: 300px;
 	width: 65%;
 	z-index: 3;
 `;
@@ -45,7 +44,7 @@ const ShowCarousel1 = styled.div`
 const ShowCarousel2 = styled.div`
 	position: absolute;
 	right: 0%;
-	height: 200px;
+	height: 300px;
 	width: 20%;
 	z-index: 3;
 `;
@@ -69,7 +68,7 @@ const Marker = styled.i`
 	padding-right: 5px;
 `;
 
-class App extends React.Component {
+class Header extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -131,7 +130,8 @@ class App extends React.Component {
 			});
 	}
 
-	openSearch() {
+	openSearch(e) {
+		e.preventDefault();
 		this.setState(prevState => ({
 			search: !prevState.search
 		}));
@@ -158,11 +158,13 @@ class App extends React.Component {
 								data-toggle="modal"
 								data-target="#exampleModal2"
 							/>
-							<div style={{ marginTop: "50px" }}>
+							<div style={{ marginTop: "150px" }}>
 								<div
 									style={{
 										display: "flex",
-										marginBottom: "10px"
+										position: "relative",
+										zIndex: "4",
+										paddingBottom: "10px"
 									}}
 								>
 									{this.state.wifi ? <Wifi /> : null}
@@ -194,4 +196,4 @@ class App extends React.Component {
 	}
 }
 
-export default App;
+export default Header;

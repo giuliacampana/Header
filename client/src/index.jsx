@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/App/App.jsx";
+import Header from "./components/App/App.jsx";
 
 const languages = [
 	"cesky",
@@ -208,12 +208,7 @@ const guests = [
 	"80 Guests"
 ];
 
-// window.languages = languages;
-// window.currency = currency;
-// window.guests = guests;
-// window.App = Header;
-
 ReactDOM.render(
-	<App languages={languages} currency={currency} guests={guests} />,
+	<Header languages={languages} currency={currency} guests={guests} />,
 	document.getElementById("header")
 );
