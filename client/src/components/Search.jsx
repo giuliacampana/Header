@@ -17,7 +17,7 @@ const SearchBody = styled.div`
 	font-size: 10px;
 	color: #757575;
 	position: fixed;
-	margin-left: 500px;
+	margin-left: 67%;
 	z-index: 6;
 
 	form {
