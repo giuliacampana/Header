@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import styled from "styled-components";
 import Search from "./Search.jsx";
 import NavBar from "./NavBar.jsx";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const SearchContainer = styled.div`
 	display: flex;

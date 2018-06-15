@@ -11,7 +11,7 @@ db.on("error", console.error.bind(console, "db connection error:"));
 db.once("open", () => console.log("db connected successfully!"));
 
 const hostelSchema = mongoose.Schema({
-	id: String,
+	id: Number,
 	location_id: Number,
 	hostel_name: String,
 	street_name: String,
@@ -96,7 +96,6 @@ Location.count((error, count) => {
 		console.log("your database has locations collection");
 	}
 });
-
 
 module.exports.Hostel = Hostel;
 module.exports.Location = Location;

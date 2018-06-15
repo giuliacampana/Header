@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
 import styled from "styled-components";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Wifi from "../Wifi.jsx";
 import Modal from "../Modal.jsx";
 import Coffee from "../Coffee.jsx";
@@ -94,7 +95,7 @@ class Header extends React.Component {
 
 	getHostelInfo() {
 		axios
-			.get(`http://localhost:3001/api/locations/hostels/99-178-4713/info`)
+			.get(`http://localhost:3001/api/locations/hostels/95/info`)
 			.then(response => {
 				const features = response.data[0].features[0];
 				if (features.wifi) {
@@ -121,7 +122,7 @@ class Header extends React.Component {
 
 	getLocationInfo() {
 		axios
-			.get("http://localhost:3001/api/locations/99/info")
+			.get(`http://localhost:3001/api/locations/5/info`)
 			.then(response => {
 				this.setState({
 					city: response.data[0].city,
@@ -144,6 +145,7 @@ class Header extends React.Component {
 					<Body photo={this.state.photos[0]}>
 						<div className="container">
 							<Icons
+								getHostel={this.getHostelInfo}
 								languages={this.props.languages}
 								currency={this.props.currency}
 								guests={this.props.guests}
