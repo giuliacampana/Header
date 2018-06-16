@@ -2,13 +2,13 @@
 FROM node:latest
 
 # Make a folder in your image where your app's source code can live
-RUN mkdir -p /src/headerApp
+RUN mkdir -p /headerApp
 
 # Tell your container where your app's source code will live
-WORKDIR /src/headerApp
+WORKDIR /headerApp
 
 # What source code do you what to copy, and where to put it?
-COPY . /src/headerApp
+COPY . /headerApp
 
 # Does your app have any dependencies that should be installed?
 RUN npm install
