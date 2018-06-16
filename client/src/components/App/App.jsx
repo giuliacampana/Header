@@ -81,7 +81,7 @@ class Header extends React.Component {
 			city: "",
 			country: "",
 			photos: [],
-			id: ""
+			location_id: ""
 		};
 		this.getHostelInfo = this.getHostelInfo.bind(this);
 		this.getLocationInfo = this.getLocationInfo.bind(this);
@@ -89,15 +89,26 @@ class Header extends React.Component {
 	}
 
 	componentDidMount() {
-		this.getHostelInfo();
-		this.getLocationInfo();
+		let path;
+		path = window.location.pathname;
+		const id = path.split("/")[1];
+		this.getHostelInfo(id);
 	}
 
-	getHostelInfo() {
+	getHostelInfo(id) {
+		if (!id) {
+			id = 1;
+		}
 		axios
-			.get(`http://localhost:3001/api/locations/hostels/95/info`)
+			.get(`http://localhost:3001/api/locations/hostels/${id}/info`)
 			.then(response => {
 				const features = response.data[0].features[0];
+				const location_id = response.data[0].location_id;
+				console.log(location_id);
+				this.setState({
+					location_id: location_id
+				});
+				this.getLocationInfo(this.state.location_id);
 				if (features.wifi) {
 					this.setState({
 						wifi: true
@@ -120,9 +131,9 @@ class Header extends React.Component {
 			});
 	}
 
-	getLocationInfo() {
+	getLocationInfo(id) {
 		axios
-			.get(`http://localhost:3001/api/locations/5/info`)
+			.get(`http://localhost:3001/api/locations/${id}/info`)
 			.then(response => {
 				this.setState({
 					city: response.data[0].city,
