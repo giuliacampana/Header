@@ -10,7 +10,7 @@ import sinon from "sinon";
 import App from "./App";
 import Icons from "../Icons";
 
-describe("<App />", () => {
+describe("<App />", () => { 
 	test("should render correctly", () => {
 		const wrapper = shallow(<App />);
 		expect(wrapper).toMatchSnapshot();

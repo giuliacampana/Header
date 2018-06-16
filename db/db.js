@@ -4,11 +4,13 @@ const mockHostelData = require("./mockHostelData.json");
 
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost/header");
+mongoose.connect("mongodb://enague:Valentino1234@ds163300.mlab.com:63300/header");
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "db connection error:"));
-db.once("open", () => console.log("db connected successfully!"));
+db.once("open", () => console.log("db connected successfully"));
+
+
 
 const hostelSchema = mongoose.Schema({
 	id: Number,
