@@ -100,7 +100,7 @@ class Header extends React.Component {
 			id = 1;
 		}
 		axios
-			.get(`http://localhost:3001/api/locations/hostels/${id}/info`)
+			.get(`/api/locations/hostels/${id}/info`)
 			.then(response => {
 				const features = response.data[0].features[0];
 				const location_id = response.data[0].location_id;
@@ -132,14 +132,12 @@ class Header extends React.Component {
 	}
 
 	getLocationInfo(id) {
-		axios
-			.get(`http://localhost:3001/api/locations/${id}/info`)
-			.then(response => {
-				this.setState({
-					city: response.data[0].city,
-					country: response.data[0].country
-				});
+		axios.get(`/api/locations/${id}/info`).then(response => {
+			this.setState({
+				city: response.data[0].city,
+				country: response.data[0].country
 			});
+		});
 	}
 
 	openSearch(e) {
