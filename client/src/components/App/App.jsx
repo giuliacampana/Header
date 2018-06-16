@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
 import styled from "styled-components";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Wifi from "../Wifi.jsx";
 import Modal from "../Modal.jsx";
 import Coffee from "../Coffee.jsx";
@@ -80,7 +81,7 @@ class Header extends React.Component {
 			city: "",
 			country: "",
 			photos: [],
-			id: ""
+			location_id: ""
 		};
 		this.getHostelInfo = this.getHostelInfo.bind(this);
 		this.getLocationInfo = this.getLocationInfo.bind(this);
@@ -88,15 +89,26 @@ class Header extends React.Component {
 	}
 
 	componentDidMount() {
-		this.getHostelInfo();
-		this.getLocationInfo();
+		let path;
+		path = window.location.pathname;
+		const id = path.split("/")[1];
+		this.getHostelInfo(id);
 	}
 
-	getHostelInfo() {
+	getHostelInfo(id) {
+		if (!id) {
+			id = 1;
+		}
 		axios
-			.get(`http://localhost:3001/api/locations/hostels/99-178-4713/info`)
+			.get(`http://localhost:3001/api/locations/hostels/${id}/info`)
 			.then(response => {
 				const features = response.data[0].features[0];
+				const location_id = response.data[0].location_id;
+				console.log(location_id);
+				this.setState({
+					location_id: location_id
+				});
+				this.getLocationInfo(this.state.location_id);
 				if (features.wifi) {
 					this.setState({
 						wifi: true
@@ -119,9 +131,9 @@ class Header extends React.Component {
 			});
 	}
 
-	getLocationInfo() {
+	getLocationInfo(id) {
 		axios
-			.get("http://localhost:3001/api/locations/99/info")
+			.get(`http://localhost:3001/api/locations/${id}/info`)
 			.then(response => {
 				this.setState({
 					city: response.data[0].city,
@@ -144,6 +156,7 @@ class Header extends React.Component {
 					<Body photo={this.state.photos[0]}>
 						<div className="container">
 							<Icons
+								getHostel={this.getHostelInfo}
 								languages={this.props.languages}
 								currency={this.props.currency}
 								guests={this.props.guests}

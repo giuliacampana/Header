@@ -17,9 +17,10 @@ app.use((req, res, next) => {
 	next();
 });
 app.use(express.static(path.join(__dirname, "../public")));
+app.use("/:id", express.static(path.join(__dirname, "../public")));
 
-app.get("/api/locations/hostels/:id/info", (req, res) => {
-	db.Hostel.find({ id: req.params.id })
+app.get("/api/locations/hostels/:id/info", async (req, res) => {
+	await db.Hostel.find({ id: req.params.id })
 		.then(data => {
 			res.send(data);
 		})
@@ -29,8 +30,8 @@ app.get("/api/locations/hostels/:id/info", (req, res) => {
 		});
 });
 
-app.get("/api/locations/:id/info", (req, res) => {
-	db.Location.find({ id: req.params.id })
+app.get("/api/locations/:id/info", async (req, res) => {
+	await db.Location.find({ id: req.params.id })
 		.then(data => {
 			res.send(data);
 		})
@@ -40,8 +41,8 @@ app.get("/api/locations/:id/info", (req, res) => {
 		});
 });
 
-app.get("/locations/hostels", (req, res) => {
-	db.Location.find()
+app.get("/locations/hostels", async (req, res) => {
+	await db.Location.find()
 		.then(data => {
 			res.send(data);
 		})
