@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import axios from "axios";
 import styled from "styled-components";
 import Wifi from "../Wifi.jsx";
@@ -69,80 +68,59 @@ const Marker = styled.i`
 `;
 
 class Header extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			search: false,
-			wifi: false,
-			coffee: false,
-			name: "",
-			location: "",
-			city: "",
-			country: "",
-			photos: [],
-			location_id: ""
-		};
-		this.getHostelInfo = this.getHostelInfo.bind(this);
-		this.getLocationInfo = this.getLocationInfo.bind(this);
-		this.openSearch = this.openSearch.bind(this);
+  constructor(props) {
+	super(props);
+	this.state = {
+		search: false,
+		name: "",
+		wifi: false,
+		coffee: false,
+		street: "",
+		city: "",
+		country: "",
+		photos: [],
+		location_id: ""
+	};
+	this.getHostelInfo = this.getHostelInfo.bind(this);
+	this.openSearch = this.openSearch.bind(this);
+  }
+
+  componentDidMount() {
+	let path;
+	path = window.location.pathname;
+	const hostelId = path.split("/")[2];
+	this.getHostelInfo(hostelId);
+  }
+
+  getHostelInfo(hostelId) {
+	if (!hostelId) {
+	  hostelId = 1;
 	}
 
-	componentDidMount() {
-		let path;
-		path = window.location.pathname;
-		const id = path.split("/")[1];
-		this.getHostelInfo(id);
-	}
-
-	getHostelInfo(id) {
-		if (!id) {
-			id = 1;
-		}
-		axios
-			.get(`/api/locations/hostels/${id}/info`)
-			.then(response => {
-				const features = response.data[0].features[0];
-				const location_id = response.data[0].location_id;
-				console.log(location_id);
-				this.setState({
-					location_id: location_id
-				});
-				this.getLocationInfo(this.state.location_id);
-				if (features.wifi) {
-					this.setState({
-						wifi: true
-					});
-				}
-
-				if (features.coffee) {
-					this.setState({
-						coffee: true
-					});
-				}
-				this.setState({
-					name: response.data[0].hostel_name,
-					location: response.data[0].street_name,
-					photos: response.data[0].photos
-				});
-			})
-			.catch(error => {
-				console.log(error);
-			});
-	}
-
-	getLocationInfo(id) {
-		axios.get(`/api/locations/${id}/info`).then(response => {
-			this.setState({
-				city: response.data[0].city,
-				country: response.data[0].country
-			});
+	axios.get(`/api/hostels/${hostelId}/info`)
+	  .then(response => {
+		console.log('response.data: ', response.data);
+		
+		this.setState({
+		  name: response.data.hostel_name,
+		  wifi: response.data.features[0],
+		  coffee: response.data.features[1],
+		  street: response.data.street_name,
+		  city: response.data.city_name,
+		  country: response.data.country_name,
+		  photos: response.data.photos,
+		  location_id: response.data.location_id,
 		});
+	  })
+	  .catch(error => {
+		console.log(error);
+	  });
 	}
 
 	openSearch(e) {
 		e.preventDefault();
 		this.setState(prevState => ({
-			search: !prevState.search
+		  search: !prevState.search
 		}));
 	}
 
@@ -188,7 +166,7 @@ class Header extends React.Component {
 								<HostelName> {this.state.name} </HostelName>
 								<Location>
 									<Marker className="fas fa-map-marker-alt" />
-									{this.state.location}, {this.state.city},{" "}
+									{this.state.street}, {this.state.city},{" "}
 									{this.state.country}
 								</Location>
 							</div>

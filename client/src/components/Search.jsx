@@ -56,32 +56,31 @@ class Search extends React.Component {
 	}
 
 	handleChangeLocation(e) {
-		this.setState({
-			location: e.target.value
-		});
+	  this.setState({
+		location: e.target.value
+	  });
 	}
 
 	handleChangeCheckIn(e) {
-		this.setState({
-			checkIn: e.target.value
-		});
+	  this.setState({
+		checkIn: e.target.value
+	  });
 	}
 
 	handleChangeCheckOut(e) {
-		this.setState({
-			checkOut: e.target.value
-		});
+	  this.setState({
+		checkOut: e.target.value
+	  });
 	}
 
 	chooseGuest(e) {
-		this.setState({
-			guests: e.target.value
-		});
+	  this.setState({
+		guests: e.target.value
+	  });
 	}
 
 	getHostelOptions() {
-		axios
-			.get("/locations/hostels")
+		axios.get(`/api/locations/hostels`)
 			.then(response => {
 				const options = response.data.filter(
 					hostel => hostel.city === this.state.location
