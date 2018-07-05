@@ -24,3 +24,8 @@ coverage
 build/
 dist/
 
+# New Relic and Artillery
+newrelic.js
+newrelic_agent.log
+hello.yml
+
