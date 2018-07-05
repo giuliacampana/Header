@@ -6,6 +6,13 @@ const pool = new Pool({
   port: 5432,
 });
 
+// const client = new Client({
+//   host: 'localhost',
+//   database: 'travelinn',
+//   port: 5432,
+// });
+
+pool.connect();
 console.log('postgres connected!');
 
 // const hostelQuery = `SELECT hostel_name, features, street_name, photos, hostels.location_id, city_name, country_name FROM hostels FULL OUTER JOIN locations ON hostels.location_id = locations.location_id WHERE hostel_id = $1;`;

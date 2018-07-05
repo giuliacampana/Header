@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import styled from "styled-components";
 import axios from "axios";
 
@@ -51,7 +50,7 @@ class Search extends React.Component {
 			checkIn: "",
 			checkOut: "",
 			guests: "",
-			options: []
+			options: 0
 		};
 	}
 
@@ -80,38 +79,26 @@ class Search extends React.Component {
 	}
 
 	getHostelOptions() {
-		axios.get(`/api/locations/hostels`)
+		axios.get(`/api/locations/hostels/${this.state.location}`)
 			.then(response => {
-				const options = response.data.filter(
-					hostel => hostel.city === this.state.location
-				);
 				this.setState({
-					options: options
+					options: response.data,
 				});
 
-				if (this.state.location === "" && options.length === 0) {
+				if (this.state.location === "" && options === 0) {
 					alert(
-						"I do not think you entered a city. Please try again"
+						"I do not think you entered a city. Please try again."
 					);
-				} else if (options.length === 0) {
+				} else if (options === 0) {
 					alert(
 						"Sorry there are no hostels in that location. Please enter another city!"
 					);
 				} else {
 					alert(
 						`There are ${
-							this.state.options.length
-						} location(s) for you to choose from!
-						${this.state.options.map(
-							(option, i) =>
-								`\n${i + 1}) ${option.city}, ${
-									option.country
-								}: ${
-									option.hostels.length
-								} hostel(s) available `
-						)}`
-					);
-				}
+							this.state.options
+						} hostel(s) for you to choose from! `
+						)}
 			})
 			.catch(error => {
 				console.log(error);
