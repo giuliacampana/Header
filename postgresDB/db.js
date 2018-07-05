@@ -1,9 +1,11 @@
 const { Client, Pool } = require('pg');
 
 const pool = new Pool({
-  host: 'localhost',
-  database: 'travelinn',
+  host: 'ec2-54-67-42-192.us-west-1.compute.amazonaws.com',
+  database: 'travelinn-header',
   port: 5432,
+  username: 'power_user',
+  password: 'travelinn-power',
 });
 
 // const client = new Client({
